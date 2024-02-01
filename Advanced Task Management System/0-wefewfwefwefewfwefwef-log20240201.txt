@@ -1,0 +1,2 @@
+2024-02-01 21:45:41.709 +00:00 [INF] Critical Update: Task 0 has high priority.
+2024-02-01 21:45:42.314 +00:00 [INF] Executing CreatedAtActionResult, writing value of type 'Advanced_Task_Management_System.Models.MyTask'.

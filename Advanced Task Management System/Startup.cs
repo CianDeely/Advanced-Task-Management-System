@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Advanced_Task_Management_System.Middleware;
 using Advanced_Task_Management_System.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
@@ -30,6 +31,7 @@ namespace Advanced_Task_Management_System
 
         public void Configure(IApplicationBuilder app)
         {
+            app.UseMiddleware<RequestLoggingMiddleware>();
             // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         }
     }

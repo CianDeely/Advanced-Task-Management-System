@@ -1,0 +1,2 @@
+2024-02-01 21:47:37.772 +00:00 [INF] Critical Update: Task 0, URGENT UPDATE has high priority. The task has a due date and time of 2/1/2024 9:47:21PM
+2024-02-01 21:47:38.315 +00:00 [INF] Executing CreatedAtActionResult, writing value of type 'Advanced_Task_Management_System.Models.MyTask'.

@@ -140,3 +140,28 @@
 /Users/ciandeely/Documents/GitHub/Advanced-Task-Management-System/Advanced-Task-Management-System/Advanced Task Management System/obj/Debug/net7.0/Advanced Task Management System.pdb
 /Users/ciandeely/Documents/GitHub/Advanced-Task-Management-System/Advanced-Task-Management-System/Advanced Task Management System/obj/Debug/net7.0/Advanced Task Management System.genruntimeconfig.cache
 /Users/ciandeely/Documents/GitHub/Advanced-Task-Management-System/Advanced-Task-Management-System/Advanced Task Management System/obj/Debug/net7.0/ref/Advanced Task Management System.dll
+/Users/ciandeely/Documents/GitHub/Advanced-Task-Management-System/Advanced-Task-Management-System/Advanced Task Management System/bin/Debug/net7.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/ciandeely/Documents/GitHub/Advanced-Task-Management-System/Advanced-Task-Management-System/Advanced Task Management System/bin/Debug/net7.0/Microsoft.Extensions.Configuration.Binder.dll
+/Users/ciandeely/Documents/GitHub/Advanced-Task-Management-System/Advanced-Task-Management-System/Advanced Task Management System/bin/Debug/net7.0/Microsoft.Extensions.DependencyInjection.dll
+/Users/ciandeely/Documents/GitHub/Advanced-Task-Management-System/Advanced-Task-Management-System/Advanced Task Management System/bin/Debug/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/ciandeely/Documents/GitHub/Advanced-Task-Management-System/Advanced-Task-Management-System/Advanced Task Management System/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
+/Users/ciandeely/Documents/GitHub/Advanced-Task-Management-System/Advanced-Task-Management-System/Advanced Task Management System/bin/Debug/net7.0/Microsoft.Extensions.Diagnostics.Abstractions.dll
+/Users/ciandeely/Documents/GitHub/Advanced-Task-Management-System/Advanced-Task-Management-System/Advanced Task Management System/bin/Debug/net7.0/Microsoft.Extensions.FileProviders.Abstractions.dll
+/Users/ciandeely/Documents/GitHub/Advanced-Task-Management-System/Advanced-Task-Management-System/Advanced Task Management System/bin/Debug/net7.0/Microsoft.Extensions.Hosting.Abstractions.dll
+/Users/ciandeely/Documents/GitHub/Advanced-Task-Management-System/Advanced-Task-Management-System/Advanced Task Management System/bin/Debug/net7.0/Microsoft.Extensions.Logging.dll
+/Users/ciandeely/Documents/GitHub/Advanced-Task-Management-System/Advanced-Task-Management-System/Advanced Task Management System/bin/Debug/net7.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/ciandeely/Documents/GitHub/Advanced-Task-Management-System/Advanced-Task-Management-System/Advanced Task Management System/bin/Debug/net7.0/Microsoft.Extensions.Options.dll
+/Users/ciandeely/Documents/GitHub/Advanced-Task-Management-System/Advanced-Task-Management-System/Advanced Task Management System/bin/Debug/net7.0/Microsoft.Extensions.Primitives.dll
+/Users/ciandeely/Documents/GitHub/Advanced-Task-Management-System/Advanced-Task-Management-System/Advanced Task Management System/bin/Debug/net7.0/Serilog.dll
+/Users/ciandeely/Documents/GitHub/Advanced-Task-Management-System/Advanced-Task-Management-System/Advanced Task Management System/bin/Debug/net7.0/Serilog.AspNetCore.dll
+/Users/ciandeely/Documents/GitHub/Advanced-Task-Management-System/Advanced-Task-Management-System/Advanced Task Management System/bin/Debug/net7.0/Serilog.Extensions.Hosting.dll
+/Users/ciandeely/Documents/GitHub/Advanced-Task-Management-System/Advanced-Task-Management-System/Advanced Task Management System/bin/Debug/net7.0/Serilog.Extensions.Logging.dll
+/Users/ciandeely/Documents/GitHub/Advanced-Task-Management-System/Advanced-Task-Management-System/Advanced Task Management System/bin/Debug/net7.0/Serilog.Formatting.Compact.dll
+/Users/ciandeely/Documents/GitHub/Advanced-Task-Management-System/Advanced-Task-Management-System/Advanced Task Management System/bin/Debug/net7.0/Serilog.Settings.Configuration.dll
+/Users/ciandeely/Documents/GitHub/Advanced-Task-Management-System/Advanced-Task-Management-System/Advanced Task Management System/bin/Debug/net7.0/Serilog.Sinks.Console.dll
+/Users/ciandeely/Documents/GitHub/Advanced-Task-Management-System/Advanced-Task-Management-System/Advanced Task Management System/bin/Debug/net7.0/Serilog.Sinks.Debug.dll
+/Users/ciandeely/Documents/GitHub/Advanced-Task-Management-System/Advanced-Task-Management-System/Advanced Task Management System/bin/Debug/net7.0/Serilog.Sinks.File.dll
+/Users/ciandeely/Documents/GitHub/Advanced-Task-Management-System/Advanced-Task-Management-System/Advanced Task Management System/bin/Debug/net7.0/System.Diagnostics.DiagnosticSource.dll
+/Users/ciandeely/Documents/GitHub/Advanced-Task-Management-System/Advanced-Task-Management-System/Advanced Task Management System/bin/Debug/net7.0/System.Text.Encodings.Web.dll
+/Users/ciandeely/Documents/GitHub/Advanced-Task-Management-System/Advanced-Task-Management-System/Advanced Task Management System/bin/Debug/net7.0/System.Text.Json.dll
+/Users/ciandeely/Documents/GitHub/Advanced-Task-Management-System/Advanced-Task-Management-System/Advanced Task Management System/bin/Debug/net7.0/runtimes/browser/lib/net7.0/System.Text.Encodings.Web.dll
