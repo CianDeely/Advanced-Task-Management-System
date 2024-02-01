@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zdLKpOH8TOGfFvKVGg0a6t1IXE07V2DuSgmSfQ82TlHhBg16WZwHcPt/54PoVWXJC02SWfpoVN4ENJU1fVWkUw==",
+  "dgSpecHash": "6zMd8Og+oCkcR3lBiGYzvkcRYDLn+odMcbESAty6WwDmRCRvzmVKXjqt3S7zSQn4dzqD2U7jNMZZ9wH76I/a0g==",
   "success": true,
-  "projectFilePath": "/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/Advanced Task Management System.csproj",
+  "projectFilePath": "/Users/ciandeely/Documents/GitHub/Advanced-Task-Management-System/Advanced-Task-Management-System/Advanced Task Management System/Advanced Task Management System.csproj",
   "expectedPackageFiles": [
     "/Users/ciandeely/.nuget/packages/azure.core/1.25.0/azure.core.1.25.0.nupkg.sha512",
     "/Users/ciandeely/.nuget/packages/azure.identity/1.7.0/azure.identity.1.7.0.nupkg.sha512",

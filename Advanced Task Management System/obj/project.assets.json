@@ -3081,11 +3081,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/Advanced Task Management System.csproj",
+      "projectUniqueName": "/Users/ciandeely/Documents/GitHub/Advanced-Task-Management-System/Advanced-Task-Management-System/Advanced Task Management System/Advanced Task Management System.csproj",
       "projectName": "Advanced Task Management System",
-      "projectPath": "/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/Advanced Task Management System.csproj",
+      "projectPath": "/Users/ciandeely/Documents/GitHub/Advanced-Task-Management-System/Advanced-Task-Management-System/Advanced Task Management System/Advanced Task Management System.csproj",
       "packagesPath": "/Users/ciandeely/.nuget/packages/",
-      "outputPath": "/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/obj/",
+      "outputPath": "/Users/ciandeely/Documents/GitHub/Advanced-Task-Management-System/Advanced-Task-Management-System/Advanced Task Management System/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/ciandeely/.nuget/NuGet/NuGet.Config"

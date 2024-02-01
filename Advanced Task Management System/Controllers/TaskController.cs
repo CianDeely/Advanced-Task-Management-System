@@ -20,7 +20,7 @@ public class TaskController : ControllerBase
     }
 
     [HttpGet(Name = "tasks")]
-    public async Task<IActionResult> Get()
+    public async Task<IActionResult> GetAllTasks()
     {
         try
         {
@@ -35,7 +35,7 @@ public class TaskController : ControllerBase
     }
 
     [HttpPost(Name = "tasks")]
-    public async Task<IActionResult> Post([FromBody] MyTask newTask)
+    public async Task<IActionResult> CreateTask([FromBody] MyTask newTask)
     {
         if (newTask == null)
         {
@@ -49,12 +49,70 @@ public class TaskController : ControllerBase
             _dbContext.MyTasks.Add(newTask);
             await _dbContext.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(Get), new { id = newTask.Id }, newTask);
+            return CreatedAtAction(nameof(CreateTask), new { id = newTask.Id }, newTask);
         }
         catch (Exception ex)
         {
             _logger.LogError(ex, "Error adding task");
             return StatusCode(500, "Internal server error");
         }
+    }
+
+    [HttpPut("tasks/{id}")]
+    public async Task<IActionResult> UpdateTask(int id, MyTask updatedTask)
+    {
+        if (id != updatedTask.Id)
+        {
+            return BadRequest();
+        }
+
+        _dbContext.Entry(updatedTask).State = EntityState.Modified;
+
+        try
+        {
+            await _dbContext.SaveChangesAsync();
+        }
+        catch (DbUpdateConcurrencyException)
+        {
+            if (!_dbContext.MyTasks.Any(t => t.Id == id))
+            {
+                return NotFound();
+            }
+            else
+            {
+                throw;
+            }
+        }
+
+        return NoContent();
+    }
+
+    [HttpDelete("tasks/{id}")]
+    public async Task<IActionResult> DeleteTask(int id)
+    {
+        var task = await _dbContext.MyTasks.FindAsync(id);
+
+        if (task == null)
+        {
+            return NotFound();
+        }
+
+        _dbContext.MyTasks.Remove(task);
+        await _dbContext.SaveChangesAsync();
+
+        return NoContent();
+    }
+
+    [HttpGet("tasks/{id}")]
+    public async Task<IActionResult> GetTask(int id)
+    {
+        var task = await _dbContext.MyTasks.FindAsync(id);
+
+        if (task == null)
+        {
+            return NotFound();
+        }
+
+        return Ok(task);
     }
 }
