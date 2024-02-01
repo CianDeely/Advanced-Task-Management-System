@@ -1,0 +1,71 @@
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/appsettings.Development.json
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/appsettings.json
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/Advanced Task Management System
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/Advanced Task Management System.deps.json
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/Advanced Task Management System.runtimeconfig.json
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/Advanced Task Management System.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/Advanced Task Management System.pdb
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/Azure.Core.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/Azure.Identity.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/Microsoft.AspNetCore.OpenApi.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/Microsoft.Bcl.AsyncInterfaces.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/Microsoft.Data.SqlClient.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/Microsoft.Identity.Client.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/Microsoft.Identity.Client.Extensions.Msal.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/Microsoft.OpenApi.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/Microsoft.SqlServer.Server.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/Microsoft.Win32.SystemEvents.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/System.Configuration.ConfigurationManager.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/System.Drawing.Common.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/System.Memory.Data.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/System.Runtime.Caching.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/System.Security.Cryptography.ProtectedData.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/System.Security.Permissions.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/System.Windows.Extensions.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/runtimes/unix/lib/net6.0/Microsoft.Data.SqlClient.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/runtimes/win/lib/net6.0/Microsoft.Data.SqlClient.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/runtimes/unix/lib/net6.0/System.Drawing.Common.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Drawing.Common.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Runtime.Caching.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/obj/Debug/net7.0/Advanced Task Management System.csproj.AssemblyReference.cache
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/obj/Debug/net7.0/Advanced Task Management System.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/obj/Debug/net7.0/Advanced Task Management System.AssemblyInfoInputs.cache
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/obj/Debug/net7.0/Advanced Task Management System.AssemblyInfo.cs
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/obj/Debug/net7.0/Advanced Task Management System.csproj.CoreCompileInputs.cache
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/obj/Debug/net7.0/Advanced Task Management System.MvcApplicationPartsAssemblyInfo.cs
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/obj/Debug/net7.0/Advanced Task Management System.MvcApplicationPartsAssemblyInfo.cache
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/obj/Debug/net7.0/staticwebassets/msbuild.Advanced Task Management System.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/obj/Debug/net7.0/staticwebassets/msbuild.build.Advanced Task Management System.props
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.Advanced Task Management System.props
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.Advanced Task Management System.props
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/obj/Debug/net7.0/staticwebassets.pack.json
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/obj/Debug/net7.0/staticwebassets.build.json
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/obj/Debug/net7.0/staticwebassets.development.json
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/obj/Debug/net7.0/scopedcss/bundle/Advanced Task Management System.styles.css
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/obj/Debug/net7.0/Advanced Task Management System.csproj.CopyComplete
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/obj/Debug/net7.0/Advanced Task Management System.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/obj/Debug/net7.0/refint/Advanced Task Management System.dll
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/obj/Debug/net7.0/Advanced Task Management System.pdb
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/obj/Debug/net7.0/Advanced Task Management System.genruntimeconfig.cache
+/Users/ciandeely/Projects/Advanced Task Management System/Advanced Task Management System/obj/Debug/net7.0/ref/Advanced Task Management System.dll
