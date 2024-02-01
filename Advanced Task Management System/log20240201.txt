@@ -610,3 +610,81 @@ VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
 2024-02-01 21:47:38.351 +00:00 [INF] Executed action TaskController.CreateTask (Advanced Task Management System) in 1258.0353ms
 2024-02-01 21:47:38.352 +00:00 [INF] Executed endpoint 'TaskController.CreateTask (Advanced Task Management System)'
 2024-02-01 21:47:38.359 +00:00 [INF] Request finished HTTP/1.1 POST https://localhost:7284/Task application/json 183 - 201 - application/json;+charset=utf-8 1306.0738ms
+2024-02-01 22:06:43.545 +00:00 [INF] Now listening on: https://localhost:7284
+2024-02-01 22:06:43.580 +00:00 [INF] Now listening on: http://localhost:5031
+2024-02-01 22:06:43.583 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-01 22:06:43.584 +00:00 [INF] Hosting environment: Development
+2024-02-01 22:06:43.584 +00:00 [INF] Content root path: /Users/ciandeely/Documents/GitHub/Advanced-Task-Management-System/Advanced-Task-Management-System/Advanced Task Management System
+2024-02-01 22:06:44.700 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/swagger/index.html - -
+2024-02-01 22:06:44.884 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/swagger/index.html - - - 200 - text/html;charset=utf-8 185.1444ms
+2024-02-01 22:06:45.051 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/swagger/v1/swagger.json - -
+2024-02-01 22:06:45.176 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 124.8630ms
+2024-02-01 22:06:49.177 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task - -
+2024-02-01 22:06:49.183 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-01 22:06:49.208 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks() on controller TaskController (Advanced Task Management System).
+2024-02-01 22:06:50.421 +00:00 [INF] Executed DbCommand (62ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+2024-02-01 22:06:50.507 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-01 22:06:50.529 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 1317.9725ms
+2024-02-01 22:06:50.530 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-01 22:06:50.538 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task - - - 200 - application/json;+charset=utf-8 1361.1777ms
+2024-02-01 22:07:02.929 +00:00 [INF] Request starting HTTP/1.1 POST https://localhost:7284/Task application/json 155
+2024-02-01 22:07:02.929 +00:00 [INF] Executing endpoint 'TaskController.CreateTask (Advanced Task Management System)'
+2024-02-01 22:07:02.939 +00:00 [INF] Route matched with {action = "CreateTask", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateTask(Advanced_Task_Management_System.Models.MyTask) on controller TaskController (Advanced Task Management System).
+2024-02-01 22:07:03.165 +00:00 [INF] Executed DbCommand (24ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [MyTasks] ([Description], [Due_Date], [Priority], [Status], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-02-01 22:07:03.194 +00:00 [INF] Executing CreatedAtActionResult, writing value of type 'Advanced_Task_Management_System.Models.MyTask'.
+2024-02-01 22:07:03.216 +00:00 [INF] Executed action TaskController.CreateTask (Advanced Task Management System) in 277.3181ms
+2024-02-01 22:07:03.216 +00:00 [INF] Executed endpoint 'TaskController.CreateTask (Advanced Task Management System)'
+2024-02-01 22:07:03.217 +00:00 [INF] Request finished HTTP/1.1 POST https://localhost:7284/Task application/json 155 - 201 - application/json;+charset=utf-8 288.2889ms
+2024-02-01 22:07:04.450 +00:00 [INF] Request starting HTTP/1.1 POST https://localhost:7284/Task application/json 155
+2024-02-01 22:07:04.450 +00:00 [INF] Executing endpoint 'TaskController.CreateTask (Advanced Task Management System)'
+2024-02-01 22:07:04.451 +00:00 [INF] Route matched with {action = "CreateTask", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateTask(Advanced_Task_Management_System.Models.MyTask) on controller TaskController (Advanced Task Management System).
+2024-02-01 22:07:04.596 +00:00 [INF] Executing CreatedAtActionResult, writing value of type 'Advanced_Task_Management_System.Models.MyTask'.
+2024-02-01 22:07:04.601 +00:00 [INF] Executed action TaskController.CreateTask (Advanced Task Management System) in 149.8736ms
+2024-02-01 22:07:04.601 +00:00 [INF] Executed endpoint 'TaskController.CreateTask (Advanced Task Management System)'
+2024-02-01 22:07:04.601 +00:00 [INF] Request finished HTTP/1.1 POST https://localhost:7284/Task application/json 155 - 201 - application/json;+charset=utf-8 151.4679ms
+2024-02-01 22:07:58.569 +00:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7284/Task/tasks/10 - 0
+2024-02-01 22:07:58.570 +00:00 [INF] Executing endpoint 'TaskController.DeleteTask (Advanced Task Management System)'
+2024-02-01 22:07:58.575 +00:00 [INF] Route matched with {action = "DeleteTask", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteTask(Int32) on controller TaskController (Advanced Task Management System).
+2024-02-01 22:07:58.739 +00:00 [INF] Executed action TaskController.DeleteTask (Advanced Task Management System) in 164.1091ms
+2024-02-01 22:07:58.739 +00:00 [INF] Executed endpoint 'TaskController.DeleteTask (Advanced Task Management System)'
+2024-02-01 22:07:58.739 +00:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7284/Task/tasks/10 - 0 - 204 - - 170.1978ms
+2024-02-01 22:08:01.759 +00:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7284/Task/tasks/10 - 0
+2024-02-01 22:08:01.759 +00:00 [INF] Executing endpoint 'TaskController.DeleteTask (Advanced Task Management System)'
+2024-02-01 22:08:01.759 +00:00 [INF] Route matched with {action = "DeleteTask", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteTask(Int32) on controller TaskController (Advanced Task Management System).
+2024-02-01 22:08:01.791 +00:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-02-01 22:08:01.794 +00:00 [INF] Executed action TaskController.DeleteTask (Advanced Task Management System) in 35.0868ms
+2024-02-01 22:08:01.794 +00:00 [INF] Executed endpoint 'TaskController.DeleteTask (Advanced Task Management System)'
+2024-02-01 22:08:01.794 +00:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7284/Task/tasks/10 - 0 - 404 - application/problem+json;+charset=utf-8 35.7444ms
+2024-02-01 22:08:14.290 +00:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7284/Task/tasks/9 - 0
+2024-02-01 22:08:14.291 +00:00 [INF] Executing endpoint 'TaskController.DeleteTask (Advanced Task Management System)'
+2024-02-01 22:08:14.291 +00:00 [INF] Route matched with {action = "DeleteTask", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteTask(Int32) on controller TaskController (Advanced Task Management System).
+2024-02-01 22:08:14.321 +00:00 [INF] Executed action TaskController.DeleteTask (Advanced Task Management System) in 29.1385ms
+2024-02-01 22:08:14.321 +00:00 [INF] Executed endpoint 'TaskController.DeleteTask (Advanced Task Management System)'
+2024-02-01 22:08:14.321 +00:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7284/Task/tasks/9 - 0 - 204 - - 30.8809ms
+2024-02-01 22:08:44.637 +00:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7284/Task/tasks/8 application/json 160
+2024-02-01 22:08:44.643 +00:00 [INF] Executing endpoint 'TaskController.UpdateTask (Advanced Task Management System)'
+2024-02-01 22:08:44.646 +00:00 [INF] Route matched with {action = "UpdateTask", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateTask(Int32, Advanced_Task_Management_System.Models.MyTask) on controller TaskController (Advanced Task Management System).
+2024-02-01 22:08:44.648 +00:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-02-01 22:08:44.649 +00:00 [INF] Executed action TaskController.UpdateTask (Advanced Task Management System) in 2.4025ms
+2024-02-01 22:08:44.649 +00:00 [INF] Executed endpoint 'TaskController.UpdateTask (Advanced Task Management System)'
+2024-02-01 22:08:44.649 +00:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7284/Task/tasks/8 application/json 160 - 400 - application/problem+json;+charset=utf-8 12.1213ms
+2024-02-01 22:09:09.643 +00:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7284/Task/tasks/6 application/json 160
+2024-02-01 22:09:09.644 +00:00 [INF] Executing endpoint 'TaskController.UpdateTask (Advanced Task Management System)'
+2024-02-01 22:09:09.644 +00:00 [INF] Route matched with {action = "UpdateTask", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateTask(Int32, Advanced_Task_Management_System.Models.MyTask) on controller TaskController (Advanced Task Management System).
+2024-02-01 22:09:09.645 +00:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-02-01 22:09:09.645 +00:00 [INF] Executed action TaskController.UpdateTask (Advanced Task Management System) in 0.9638ms
+2024-02-01 22:09:09.645 +00:00 [INF] Executed endpoint 'TaskController.UpdateTask (Advanced Task Management System)'
+2024-02-01 22:09:09.646 +00:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7284/Task/tasks/6 application/json 160 - 400 - application/problem+json;+charset=utf-8 2.3623ms
+2024-02-01 22:10:35.540 +00:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7284/Task/tasks/4 application/json 160
+2024-02-01 22:10:35.566 +00:00 [INF] Executing endpoint 'TaskController.UpdateTask (Advanced Task Management System)'
+2024-02-01 22:10:35.567 +00:00 [INF] Route matched with {action = "UpdateTask", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateTask(Int32, Advanced_Task_Management_System.Models.MyTask) on controller TaskController (Advanced Task Management System).
+2024-02-01 22:10:35.578 +00:00 [INF] Executed action TaskController.UpdateTask (Advanced Task Management System) in 10.9324ms
+2024-02-01 22:10:35.578 +00:00 [INF] Executed endpoint 'TaskController.UpdateTask (Advanced Task Management System)'
+2024-02-01 22:10:35.578 +00:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7284/Task/tasks/4 application/json 160 - 204 - - 38.0596ms

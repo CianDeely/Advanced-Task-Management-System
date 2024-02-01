@@ -1,0 +1,34 @@
+2024-02-01 22:07:03.039 +00:00 [INF] Critical Update: Task 0, eewrwerwrwe has high priority. The task has a due date and time of 2/1/2024 10:06:55PM
+2024-02-01 22:07:04.543 +00:00 [INF] Executed DbCommand (25ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = In2024-02-01 22:07:58.721 +00:00 [INF] Executed DbCommand (27ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+WHERE [m].[Id] = @__p_0
+2024-02-01 22:07:58.733 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [MyTasks]
+OUTPUT 1
+WHERE [Id] = @p0;
+2024-02-01 22:07:58.739 +00:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2024-02-01 22:08:01.789 +00:00 [INF] Executed DbCommand (25ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+WHERE [m].[Id] = @__p_0
+2024-02-01 22:08:14.318 +00:00 [INF] Executed DbCommand (25ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+WHERE [m].[Id] = @__p_0
+2024-02-01 22:08:14.320 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [MyTasks]
+OUTPUT 1
+WHERE [Id] = @p0;
+2024-02-01 22:08:14.321 +00:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2024-02-01 22:10:35.577 +00:00 [INF] Executed DbCommand (4ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [MyTasks] SET [Description] = @p0, [Due_Date] = @p1, [Priority] = @p2, [Status] = @p3, [Title] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+2024-02-01 22:10:35.578 +00:00 [INF] Executing StatusCodeResult, setting HTTP status code 204

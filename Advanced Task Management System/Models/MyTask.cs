@@ -17,7 +17,6 @@ namespace Advanced_Task_Management_System.Models
         public Priority Priority { get; set; }
         public DateTime Due_Date { get; set; }
         public Status Status { get; set; }
-        public Priority? Previous_Priority { get; set; }
     }
 
 }

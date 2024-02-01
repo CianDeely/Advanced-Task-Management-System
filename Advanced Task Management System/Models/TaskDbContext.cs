@@ -47,7 +47,6 @@ namespace Advanced_Task_Management_System.Models
                 .CreateLogger();
 
             Log.Logger.Information($"Critical Update: Task {task.Id}, {task.Title} has high priority. The task has a due date and time of {task.Due_Date}");
-            task.Previous_Priority = task.Priority;
         }
     }
 }
