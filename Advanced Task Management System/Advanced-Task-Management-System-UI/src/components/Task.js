@@ -36,12 +36,12 @@ export const Task = ({task, deleteTask, editTask, toggleComplete}) => {
     <div className="Task">
         <p className={getStatusString(task.status) + " " + getPriorityString(task.priority)} onClick={() => toggleComplete(task.id, task.title, task.description, task.priority, task.due_Date, task.status)}>{task.title}</p>
         <p className="task-description">Description: {task.description}</p>
-        <p>Priority: {task.priority} {getPriorityString(task.priority)}</p>
+        <p>Priority: {getPriorityString(task.priority)}</p>
         <p>Due date: {task.due_Date}</p>
-        <p>Status: {task.status} {getStatusString(task.status)}</p>
+        <p>Status: {getStatusString(task.status)}</p>
         <div>
         <FontAwesomeIcon className="edit-icon" icon={faPenToSquare} onClick={() => editTask(task.id)} />
-        <FontAwesomeIcon className="delete-icon" icon={faTrash} onClick={() => deleteTask(task.id)} />
+        <FontAwesomeIcon className="delete-icon" icon={faTrash} onClick={() => { if (window.confirm('Are you sure you wish to delete this task?')) deleteTask(task.id) } } />
         </div>
     </div>
   )

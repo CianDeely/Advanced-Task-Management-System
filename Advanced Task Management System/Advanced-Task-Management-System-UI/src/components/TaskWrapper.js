@@ -23,7 +23,6 @@ export const TaskWrapper = () => {
 
   const addTask = async (title, description, priority, dueDate, status) => {
     const newTask = { Id: 0, Title: title, Description: description, Priority: parseInt(priority), Due_Date: dueDate, Status: parseInt(status) }
-    console.log(newTask);
     try {
     const response = await Axios.post("https://localhost:7284/Task", newTask).then(response => setTasks([
       ...tasks,

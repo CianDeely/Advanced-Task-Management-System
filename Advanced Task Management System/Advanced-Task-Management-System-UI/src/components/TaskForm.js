@@ -14,9 +14,13 @@ export const TaskForm = ({addTask}) => {
      
     const handleSubmit = e => {
         e.preventDefault();
+        if(status.value == "2"){
+            if (window.confirm('Are you sure you wish to create a high priority task?')){
+                addTask(title, description, priority.value, dueDate, status.value);  
+            }
+        } else {
         addTask(title, description, priority.value, dueDate, status.value);
-
-        setTitle("")
+        }
     }
     return (
         <form className="TaskForm" onSubmit={handleSubmit}>

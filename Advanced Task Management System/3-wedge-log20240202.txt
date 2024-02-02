@@ -472,3 +472,79 @@ DELETE FROM [MyTasks]
 OUTPUT 1
 WHERE [Id] = @p0;
 2024-02-02 18:26:20.796 +00:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2024-02-02 18:43:48.570 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+2024-02-02 18:45:51.120 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+2024-02-02 18:54:08.451 +00:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+2024-02-02 18:58:57.733 +00:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+WHERE [m].[Id] = @__p_0
+2024-02-02 18:58:57.760 +00:00 [INF] Executed DbCommand (25ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [MyTasks]
+OUTPUT 1
+WHERE [Id] = @p0;
+2024-02-02 18:58:57.760 +00:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2024-02-02 19:06:02.928 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [MyTasks] ([Description], [Due_Date], [Priority], [Status], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-02-02 19:06:58.237 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+2024-02-02 19:07:01.455 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+2024-02-02 19:07:18.871 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+2024-02-02 19:07:19.255 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+2024-02-02 19:07:36.596 +00:00 [INF] Executed DbCommand (23ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [MyTasks] ([Description], [Due_Date], [Priority], [Status], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-02-02 19:08:54.340 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+2024-02-02 19:09:43.872 +00:00 [INF] Executed DbCommand (50ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [MyTasks] ([Description], [Due_Date], [Priority], [Status], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-02-02 19:09:47.350 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [MyTasks] SET [Description] = @p0, [Due_Date] = @p1, [Priority] = @p2, [Status] = @p3, [Title] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+2024-02-02 19:09:47.373 +00:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2024-02-02 19:09:48.833 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [MyTasks] SET [Description] = @p0, [Due_Date] = @p1, [Priority] = @p2, [Status] = @p3, [Title] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+2024-02-02 19:09:48.855 +00:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2024-02-02 19:12:26.509 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+2024-02-02 19:12:59.640 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [MyTasks] ([Description], [Due_Date], [Priority], [Status], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
