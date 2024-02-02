@@ -1,0 +1,12 @@
+{
+    "statuses": [
+      { "value": "1",
+        "display": "Pending" },
+      { "value": "2",
+        "display": "In Progress" },
+        { "value": "3",
+        "display": "Completed" },
+        { "value": "4",
+        "display": "Archived" }
+    ]
+  }

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Advanced_Task_Management_System.Middleware;
 using Advanced_Task_Management_System.Models;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -24,6 +25,7 @@ namespace Advanced_Task_Management_System
         public void ConfigureServices(IServiceCollection services)
         {
             // Add Entity Framework Core with SQL Server
+            services.AddCors();
             services.AddControllers();
 
             // Add other services and configurations as needed

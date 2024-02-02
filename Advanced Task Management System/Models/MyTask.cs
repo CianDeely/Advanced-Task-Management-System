@@ -1,7 +1,6 @@
 ﻿using System;
 using Advanced_Task_Management_System.Enums;
 using Microsoft.EntityFrameworkCore;
-import { Dropdown } from 'primereact/dropdown';
 
 namespace Advanced_Task_Management_System.Models
 {

@@ -1,11 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Task } from "./Task";
 import { TaskForm } from "./TaskForm";
 import { v4 as uuidv4 } from "uuid";
 import { EditTaskForm } from "./EditTaskForm";
+import Axios from "axios";
 
 export const TaskWrapper = () => {
   const [tasks, setTasks] = useState([]);
+
+  const fetchTasks = async () => {
+    const { data } = await Axios.get(
+      "https://localhost:7284/Task"
+    );
+    const tasks = data;
+    setTasks(tasks);
+  };
+
+  useEffect(() => {
+    fetchTasks();
+  }, []);
 
   const addTask = (title, description, priority, dueDate, status) => {
     setTasks([

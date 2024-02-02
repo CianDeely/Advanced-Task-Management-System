@@ -26,6 +26,12 @@ builder.Services.AddDbContext<TaskDbContext>(options =>
 
 builder.Services.AddHttpContextAccessor();  
 var app = builder.Build();
+app.UseCors(builder => builder
+                 .AllowAnyHeader()
+                 .AllowAnyMethod()
+                 .AllowAnyOrigin()
+                 .SetIsOriginAllowed((host) => true)
+             );
 
 if (app.Environment.IsDevelopment())
 {
