@@ -1,0 +1,27 @@
+2024-02-02 16:24:53.498 +00:00 [INF] Critical Update: Task 3, efwefe has high priority. The task has a due date and time of 2/22/2024 12:00:00AM
+2024-02-02 16:24:53.582 +00:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2024-02-02 16:27:13.179 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [MyTasks] SET [Description] = @p0, [Due_Date] = @p1, [Priority] = @p2, [Status] = @p3, [Title] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+2024-02-02 16:27:13.180 +00:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2024-02-02 16:27:19.830 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+2024-02-02 16:30:37.310 +00:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+2024-02-02 16:36:30.959 +00:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+2024-02-02 16:37:09.519 +00:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+2024-02-02 16:37:50.534 +00:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+2024-02-02 16:43:22.458 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]

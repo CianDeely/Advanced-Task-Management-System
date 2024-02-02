@@ -15,7 +15,8 @@
           "Serilog": "3.1.1",
           "Serilog.AspNetCore": "8.0.1",
           "Serilog.Extensions.Logging": "8.0.0",
-          "Swashbuckle.AspNetCore": "6.5.0"
+          "Swashbuckle.AspNetCore": "6.5.0",
+          "VisualStudio.gitignore": "1.0.1"
         },
         "runtime": {
           "Advanced Task Management System.dll": {}
@@ -837,7 +838,8 @@
             "fileVersion": "6.0.21.52210"
           }
         }
-      }
+      },
+      "VisualStudio.gitignore/1.0.1": {}
     }
   },
   "libraries": {
@@ -1412,6 +1414,13 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
+    },
+    "VisualStudio.gitignore/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uF3VC/z+BWxr6q16MisLgpKm8YtzcfAE72nmo8nY4W3s0AFzGWecPKOUsc41qeQeUI/dU4cBduTMf6ccXMx3Zw==",
+      "path": "visualstudio.gitignore/1.0.1",
+      "hashPath": "visualstudio.gitignore.1.0.1.nupkg.sha512"
     }
   }
 }

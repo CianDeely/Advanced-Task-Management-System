@@ -4,6 +4,7 @@ import { TaskForm } from "./TaskForm";
 import { v4 as uuidv4 } from "uuid";
 import { EditTaskForm } from "./EditTaskForm";
 import Axios from "axios";
+import { editableInputTypes } from "@testing-library/user-event/dist/utils";
 
 export const TaskWrapper = () => {
   const [tasks, setTasks] = useState([]);
@@ -20,25 +21,52 @@ export const TaskWrapper = () => {
     fetchTasks();
   }, []);
 
-  const addTask = (title, description, priority, dueDate, status) => {
-    setTasks([
+  const addTask = async (title, description, priority, dueDate, status) => {
+    const newTask = { Id: 0, Title: title, Description: description, Priority: parseInt(priority), Due_Date: dueDate, Status: parseInt(status) }
+    console.log(newTask);
+    try {
+    const response = await Axios.post("https://localhost:7284/Task", newTask).then(response => setTasks([
       ...tasks,
-      { id: uuidv4(), task: title, description: description, priority: priority, dueDate: dueDate, status: status, completed: false, isEditing: false },
-    ]);
+      response.data,
+    ]))
+    } catch (error) {
+      console.error("Error creating task:", error);
+    }
   }
 
-  const deleteTask = (id) => 
-    setTasks(tasks.filter((task) => task.id !== id));
-
-  const toggleComplete = (id) => {
-    setTasks(
-      tasks.map((task) =>
-        task.id === id ? { ...task, completed: !task.completed } : task
-      )
-    );
+  const deleteTask = async (id) => {
+    try {
+      await Axios.delete(`https://localhost:7284/Task/tasks/${id}`);
+      setTasks(tasks.filter((task) => task.id !== id));
+    } catch (error) {
+      console.error("Error deleting task:", error);
+    }
   }
 
-  const editTask = (id) => {
+  const toggleComplete = async (id, title, description, priority, due_date, status) => {
+    const edittedTask = { Id: id, Title: title, Description: description, Priority: parseInt(priority), Due_Date: due_date, Status: parseInt(status) }
+    if(status != 2){
+      edittedTask.status = 2;
+    } else {
+      edittedTask.status = 0;
+    }
+    try {
+      await Axios.put(`https://localhost:7284/Task/tasks/${id}`, edittedTask).then(response =>  setTasks(
+        tasks.map((task) =>
+          task.id === id ? { ...task, status: edittedTask.status } : task
+        )
+      ));
+      setTasks(
+        tasks.map((task) =>
+          task.id === id ? { ...task, status: edittedTask.status } : task
+        )
+      );
+    } catch (error) {
+      console.error("Error updating task:", error);
+    }
+  }
+
+  const editTask = async (id) => {
     setTasks(
       tasks.map((task) =>
         task.id === id ? { ...task, isEditing: !task.isEditing } : task
@@ -46,13 +74,18 @@ export const TaskWrapper = () => {
     );
   }
 
-  // const editTask = (task, id) => {
-  //   setTasks(
-  //     tasks.map((task) =>
-  //       task.id === id ? { ...task, task, isEditing: !task.isEditing } : task
-  //     )
-  //   );
-  // };
+  const editTaskComplete = async (id, title, description, priority, due_date, status) => {
+    const edittedTask = { Id: id, Title: title, Description: description, Priority: parseInt(priority), Due_Date: due_date, Status: parseInt(status) }
+    try {
+      await Axios.put(`https://localhost:7284/Task/tasks/${id}`, edittedTask).then(response => setTasks(
+        tasks.map((task) =>
+          task.id === id ? { ...task, isEditing: !task.isEditing } : task
+        )
+      ));
+    } catch (error) {
+      console.error("Error updating task:", error);
+    }
+  }
 
   return (
     <div className="TaskWrapper">
@@ -60,7 +93,7 @@ export const TaskWrapper = () => {
       <TaskForm addTask={addTask} />
       {tasks.map((task) =>
         task.isEditing ? (
-          <EditTaskForm editTask={editTask} task={task} />
+          <EditTaskForm editTask={editTask} task={task} editTaskComplete={editTaskComplete} />
         ) : (
           <Task
             key={task.id}

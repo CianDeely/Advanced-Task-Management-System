@@ -1,0 +1,8 @@
+2024-02-02 17:10:28.194 +00:00 [INF] Critical Update: Task 5, ewfwefewf has high priority. The task has a due date and time of 2/1/2024 9:34:29PM
+2024-02-02 17:10:28.329 +00:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2024-02-02 17:10:33.831 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [MyTasks] SET [Description] = @p0, [Due_Date] = @p1, [Priority] = @p2, [Status] = @p3, [Title] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;

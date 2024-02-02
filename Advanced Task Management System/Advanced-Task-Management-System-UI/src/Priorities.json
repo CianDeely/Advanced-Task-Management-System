@@ -1,10 +1,10 @@
 {
     "priorities": [
-      { "value": "1",
+      { "value": "0",
         "display": "Low" },
-      { "value": "2",
+      { "value": "1",
         "display": "Medium" },
-        { "value": "3",
+        { "value": "2",
         "display": "High" }
     ]
   }

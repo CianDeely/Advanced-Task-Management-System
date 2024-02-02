@@ -56,11 +56,12 @@ public class TaskController : ControllerBase
             _logger.LogError(ex, "Error adding task");
             return StatusCode(500, "Internal server error");
         }
-    }
+    }   
 
     [HttpPut("tasks/{id}")]
-    public async Task<IActionResult> UpdateTask(int id, MyTask updatedTask)
+    public async Task<IActionResult> UpdateTask([FromBody] MyTask updatedTask)
     {
+        int id = updatedTask.Id;
         if (id != updatedTask.Id)
         {
             return BadRequest();
