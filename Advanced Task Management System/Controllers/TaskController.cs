@@ -20,11 +20,15 @@ public class TaskController : ControllerBase
     }
 
     [HttpGet(Name = "tasks")]
-    public async Task<IActionResult> GetAllTasks()
+    public async Task<IActionResult> GetAllTasks([FromQuery] int page = 1, [FromQuery] int pageSize = 10)
     {
         try
         {
-            var tasks = await _dbContext.MyTasks.ToListAsync();
+            var tasks = await _dbContext.MyTasks
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+
             return Ok(tasks);
         }
         catch (Exception ex)
