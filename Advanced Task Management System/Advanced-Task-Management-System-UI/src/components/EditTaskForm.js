@@ -69,7 +69,8 @@ export const EditTaskForm = ({ editTask, task, editTaskComplete }) => {
           dismissOnClick={true}
         >
           {Priorities.priorities.map((p) => (
-            <Dropdown.Item
+            <Dropdown.Item 
+              key={p.id}
               className="task-dropdown-item"
               onClick={(e) => setPriority(p)}
             >
@@ -96,6 +97,7 @@ export const EditTaskForm = ({ editTask, task, editTaskComplete }) => {
         >
           {Statuses.statuses.map((s) => (
             <Dropdown.Item
+              key={s.id}
               className="task-dropdown-item"
               onClick={(e) => setStatus(s)}
             >

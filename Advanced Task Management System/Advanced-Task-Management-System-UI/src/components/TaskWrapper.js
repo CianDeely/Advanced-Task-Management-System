@@ -12,9 +12,15 @@ export const TaskWrapper = () => {
   const fetchTasks = async (page) => {
     try {
       const response = await Axios.get(`https://localhost:7284/Task?page=${page}`);
-      const data = response.data; 
-      setTasks((prevTasks) => [...prevTasks, ...data]);
+      const data = response.data;
+
+      // If data is empty, there are no more tasks
       setHasMore(data.length > 0);
+
+      // If it's the first page or data is not empty, update tasks
+      if (page === 1 || data.length > 0) {
+        setTasks((prevTasks) => (page === 1 ? data : [...prevTasks, ...data]));
+      }
     } catch (error) {
       console.error('Error fetching tasks:', error);
     }
@@ -28,19 +34,18 @@ export const TaskWrapper = () => {
     const handleScroll = () => {
       if (
         window.innerHeight + document.documentElement.scrollTop ===
-        document.documentElement.offsetHeight
+          document.documentElement.offsetHeight &&
+        hasMore
       ) {
-        if (hasMore) {
-          setPage((prevPage) => prevPage + 1);
-        }
+        setPage((prevPage) => prevPage + 1);
       }
     };
-
+  
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [hasMore]);
+  }, [hasMore, setPage]);
 
   const addTask = async (title, description, priority, dueDate, status) => {
     const newTask = { Id: 0, Title: title, Description: description, Priority: parseInt(priority), Due_Date: dueDate, Status: parseInt(status) }
@@ -57,7 +62,7 @@ export const TaskWrapper = () => {
   const deleteTask = async (id) => {
     try {
       await Axios.delete(`https://localhost:7284/Task/tasks/${id}`);
-      setTasks(tasks.filter((task) => task.id !== id));
+      setTasks(tasks.filter((task) => task.Id !== id));
     } catch (error) {
       console.error("Error deleting task:", error);
     }
@@ -86,13 +91,14 @@ export const TaskWrapper = () => {
     }
   }
 
-  const editTask = async (id) => {
-    setTasks(
-      tasks.map((task) =>
+  const editTask = (id) => {
+    setTasks((prevTasks) =>
+      prevTasks.map((task) =>
         task.id === id ? { ...task, isEditing: !task.isEditing } : task
       )
     );
-  }
+  };
+  
 
   const editTaskComplete = async (id, title, description, priority, due_date, status) => {
     const edittedTask = { Id: id, Title: title, Description: description, Priority: parseInt(priority), Due_Date: due_date, Status: parseInt(status) }
@@ -112,22 +118,22 @@ export const TaskWrapper = () => {
     <h1>Task Management</h1>
     <TaskForm addTask={addTask} />
     {tasks.map((task) =>
-      task.isEditing ? (
-        <EditTaskForm editTask={editTask} task={task} editTaskComplete={editTaskComplete} />
-      ) : (
-        <Task
-          key={task.id}
-          task={task}
-          description={task.description}
-          priority={task.priority}
-          dueDate={task.dueDate}
-          status={task.status}
-          deleteTask={deleteTask}
-          editTask={editTask}
-          toggleComplete={toggleComplete}
-        />
-      )
-    )}
+  task.isEditing ? (
+    <EditTaskForm key={`edit_${task.id}`} editTask={editTask} task={task} editTaskComplete={editTaskComplete} />
+  ) : (
+    <Task
+      key={task.id}
+      task={task}
+      description={task.description}
+      priority={task.priority}
+      dueDate={task.dueDate}
+      status={task.status}
+      deleteTask={deleteTask}
+      editTask={editTask}
+      toggleComplete={toggleComplete}
+    />
+  )
+)}
   </div>
 );
 };

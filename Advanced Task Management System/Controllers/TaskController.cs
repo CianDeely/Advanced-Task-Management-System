@@ -29,6 +29,17 @@ public class TaskController : ControllerBase
                 .Take(pageSize)
                 .ToListAsync();
 
+            // Check if there are more tasks
+            var totalCount = await _dbContext.MyTasks.CountAsync();
+            var hasMore = (page * pageSize) < totalCount;
+
+            // Add Link header for pagination
+            if (hasMore)
+            {
+                var nextPage = Url.Link("tasks", new { page = page + 1, pageSize });
+                Response.Headers.Add("Link", $"<{nextPage}>; rel=\"next\"");
+            }
+
             return Ok(tasks);
         }
         catch (Exception ex)
@@ -63,9 +74,8 @@ public class TaskController : ControllerBase
     }   
 
     [HttpPut("tasks/{id}")]
-    public async Task<IActionResult> UpdateTask([FromBody] MyTask updatedTask)
+    public async Task<IActionResult> UpdateTask(int id, [FromBody] MyTask updatedTask)
     {
-        int id = updatedTask.Id;
         if (id != updatedTask.Id)
         {
             return BadRequest();
