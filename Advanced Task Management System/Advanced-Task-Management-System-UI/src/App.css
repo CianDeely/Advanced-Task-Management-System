@@ -27,6 +27,16 @@ h1 {
   font-size: 1.75rem;
 }
 
+h2 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.title-buffer {
+  margin-top: 1em;
+}
+
 .TaskWrapper {
   background: #1A1A40;
   margin-top: 5rem;

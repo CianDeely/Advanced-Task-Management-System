@@ -4,6 +4,9 @@ import { TaskForm } from "./TaskForm";
 import { EditTaskForm } from "./EditTaskForm";
 import Axios from "axios";
 import StatusChart from "./StatusChart"; // Import the StatusChart component
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 export const TaskWrapper = () => {
@@ -12,13 +15,13 @@ export const TaskWrapper = () => {
   const [page, setPage] = useState(1);
   const [hasMore, setHasMore] = useState(true);
 
+
   const fetchTasks = async (page) => {
     try {
       const response = await Axios.get(`https://localhost:7284/Task?page=${page}`);
       const data = response.data.tasks;
       // If data is empty, there are no more tasks
       setHasMore(data.length > 0);
-
       // If it's the first page or data is not empty, update tasks
       if (page === 1 || data.length > 0) {
         setTasks((prevTasks) => (page === 1 ? data : [...prevTasks, ...data]));
@@ -72,7 +75,7 @@ export const TaskWrapper = () => {
       ...tasks,
       response.data,
     ]))
-
+    toast("Task added!");
     } catch (error) {
       console.error("Error creating task:", error);
     }
@@ -80,6 +83,7 @@ export const TaskWrapper = () => {
 
   const deleteTask = async (id) => {
     try {
+      toast("Task deleted!");
       await Axios.delete(`https://localhost:7284/Task/tasks/${id}`).then(response => setTasks(tasks.filter((task) => task.id !== id)));
     } catch (error) {
       console.error("Error deleting task:", error);
@@ -90,8 +94,10 @@ export const TaskWrapper = () => {
     const edittedTask = { Id: id, Title: title, Description: description, Priority: parseInt(priority), Due_Date: due_date, Status: parseInt(status) }
     if(status != 2){
       edittedTask.status = 2;
+      toast("Task set to complete!");
     } else {
       edittedTask.status = 0;
+      toast("Task set to pending!");
     }
     try {
       await Axios.put(`https://localhost:7284/Task/tasks/${id}`, edittedTask).then(response =>  setTasks(
@@ -126,6 +132,7 @@ export const TaskWrapper = () => {
           task.id === id ? { ...task, id: id, title: title, description: description, priority: priority, due_date: due_date, status: status, isEditing: !task.isEditing } : task
         )
       ));
+      toast("Task updated!");
     } catch (error) {
       console.error("Error updating task:", error);
     }
@@ -133,12 +140,15 @@ export const TaskWrapper = () => {
 
   return (
     <div className="TaskWrapper">
+    <ToastContainer />
     <h1>Task Management</h1>
     <div>
-        <h2>Task Status Distribution</h2>
+        <h2 className="task-chart-title">Task Status Distribution</h2>
         <StatusChart id="StatusChart" statusCounts={statusCounts} /> {/* Render the StatusChart */}
       </div>
+      <h1 className="title-buffer">Add New Task</h1>
     <TaskForm addTask={addTask} />
+    <h1 className="title-buffer">All Tasks</h1>
     {tasks.map((task) =>
   task.isEditing ? (
     <EditTaskForm key={`edit_${task.id}`} editTask={editTask} task={task} editTaskComplete={editTaskComplete} />
@@ -157,6 +167,5 @@ export const TaskWrapper = () => {
   )
 )}
   </div>
-  
 );
 };
