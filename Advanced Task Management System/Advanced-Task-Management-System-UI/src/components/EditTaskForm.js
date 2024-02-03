@@ -9,32 +9,58 @@ export const EditTaskForm = ({ editTask, task, editTaskComplete }) => {
   const [priority, setPriority] = useState(null);
   const [status, setStatus] = useState(null);
   const [dueDate, setDueDate] = useState('');
-
   const priorityPlaceholder = priority !== null ? `Priority: ${priority.display}` : 'Priority: Select a priority';
   const statusPlaceholder = status !== null ? `Status: ${status.display}` : 'Status: Select a status';
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
     editTask(title, task.id);
   };
 
+  const handleEditSubmit = e => {
+    e.preventDefault();
+    const editPriorityDropdown = document.getElementById('edit-priority-dropdown');
+    const editStatusDropdown = document.getElementById('edit-status-dropdown');
+    if(!priority) {
+      editPriorityDropdown.classList.add("mandatory-field");
+        setTimeout(function() {
+          editPriorityDropdown.classList.remove("mandatory-field");
+        }, 3000);
+    } else if(!status){
+      editStatusDropdown.classList.add("mandatory-field");
+        setTimeout(function() {
+          editStatusDropdown.classList.remove("mandatory-field");
+        }, 3000);
+    } else{
+      if(status.value == "2"){
+        if (window.confirm('Are you sure you wish to upgrade this task to a high priority task?')){
+          editTaskComplete(task.id, title, description, priority.value, dueDate, status.value)
+        }
+    } else {
+      editTaskComplete(task.id, title, description, priority.value, dueDate, status.value)
+    }
+ }
+}
+  
   return (
     <form className="TaskForm" onSubmit={handleSubmit}>
       <input
+        required
         type="text"
-        value={title}
+        defaultValue={task.title}
         className="task-input"
         placeholder={task.title}
         onChange={(e) => setTitle(e.target.value)}
       />
       <input
         type="text"
-        value={description}
+        defaultValue={task.description}
         className="task-input"
         placeholder={task.description}
         onChange={(e) => setDescription(e.target.value)}
       />
-      <div className="dropdown-wrapper">
+      <div id="edit-priority-dropdown" className="dropdown-wrapper">
         <Dropdown
           className="task-dropdown"
           placement="right"
@@ -53,13 +79,14 @@ export const EditTaskForm = ({ editTask, task, editTaskComplete }) => {
         </Dropdown>
       </div>
       <input
+        required
         type="date"
-        value={dueDate}
+        defaultValue={task.dueDate}
         className="task-input"
         placeholder={task.dueDate}
         onChange={(e) => setDueDate(e.target.value)}
       />
-      <div className="dropdown-wrapper">
+      <div id="edit-status-dropdown" className="dropdown-wrapper">
         <Dropdown
           className="task-dropdown"
           placement="right"
@@ -80,9 +107,7 @@ export const EditTaskForm = ({ editTask, task, editTaskComplete }) => {
       <button
         type="submit"
         className="task-btn"
-        onClick={() =>
-          editTaskComplete(task.id, title, description, priority.value, dueDate, status.value)
-        }
+        onClick={handleEditSubmit}
       >
         Update Task
       </button>

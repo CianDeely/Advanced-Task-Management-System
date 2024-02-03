@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Task } from "./Task";
 import { TaskForm } from "./TaskForm";
-import { v4 as uuidv4 } from "uuid";
 import { EditTaskForm } from "./EditTaskForm";
 import Axios from "axios";
-import { editableInputTypes } from "@testing-library/user-event/dist/utils";
 
 export const TaskWrapper = () => {
   const [tasks, setTasks] = useState([]);
@@ -78,7 +76,7 @@ export const TaskWrapper = () => {
     try {
       await Axios.put(`https://localhost:7284/Task/tasks/${id}`, edittedTask).then(response => setTasks(
         tasks.map((task) =>
-          task.id === id ? { ...task, isEditing: !task.isEditing } : task
+          task.id === id ? { ...task, id: id, title: title, description: description, priority: priority, due_date: due_date, status: status, isEditing: !task.isEditing } : task
         )
       ));
     } catch (error) {
