@@ -34,7 +34,7 @@ export const Task = ({task, deleteTask, editTask, toggleComplete}) => {
 
   return (
     <div className="Task">
-        <p className={getStatusString(task.status) + " " + getPriorityString(task.priority)} onClick={() => toggleComplete(task.id, task.title, task.description, task.priority, task.due_Date, task.status)}>{task.title}</p>
+        <h2 className={getStatusString(task.status) + " " + getPriorityString(task.priority)} onClick={() => toggleComplete(task.id, task.title, task.description, task.priority, task.due_Date, task.status)}>{task.title}</h2>
         <p className="task-description">Description: {task.description}</p>
         <p>Priority: {getPriorityString(task.priority)}</p>
         <p>Due date: {task.due_Date}</p>
