@@ -131,6 +131,17 @@ h1 {
   cursor: pointer;
 }
 
+#notifications {
+  cursor: pointer;
+  position: fixed;
+  right: 0px;
+  z-index: 9999;
+  bottom: 0px;
+  margin-bottom: 22px;
+  margin-right: 15px;
+  max-width: 300px;   
+}
+
 .High {
   background-color: rgb(230, 52, 52);
   border-radius: 8px;

@@ -11,6 +11,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "autoprefixer": "^10.4.17",
+    "chart.js": "^4.4.1",
     "flowbite-react": "^0.7.2",
     "postcss": "^8.4.33",
     "primereact": "^10.4.0",

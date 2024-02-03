@@ -33,6 +33,12 @@ public class TaskController : ControllerBase
             var totalCount = await _dbContext.MyTasks.CountAsync();
             var hasMore = (page * pageSize) < totalCount;
 
+            // Get status counts
+            var statusCounts = await _dbContext.MyTasks
+                .GroupBy(t => t.Status)
+                .Select(g => new { Status = g.Key, Count = g.Count() })
+                .ToListAsync();
+
             // Add Link header for pagination
             if (hasMore)
             {
@@ -40,7 +46,9 @@ public class TaskController : ControllerBase
                 Response.Headers.Add("Link", $"<{nextPage}>; rel=\"next\"");
             }
 
-            return Ok(tasks);
+            // Return tasks and status counts
+            var result = new { Tasks = tasks, StatusCounts = statusCounts };
+            return Ok(result);
         }
         catch (Exception ex)
         {

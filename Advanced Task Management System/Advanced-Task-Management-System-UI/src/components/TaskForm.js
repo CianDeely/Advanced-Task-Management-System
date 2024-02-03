@@ -29,10 +29,20 @@ export const TaskForm = ({addTask}) => {
         } else{
             if(status.value == "2"){
                 if (window.confirm('Are you sure you wish to create a high priority task?')){
-                    addTask(title, description, priority.value, dueDate, status.value);  
+                    addTask(title, description, priority.value, dueDate, status.value);
+                    setTitle('');
+                    setDescription('');
+                    setPriority(null);
+                    setDueDate('');
+                    setStatus(null);
                 }
             } else {
             addTask(title, description, priority.value, dueDate, status.value);
+            setTitle('');
+            setDescription('');
+            setPriority(null);
+            setDueDate('');
+            setStatus(null);
             }
      }
     }

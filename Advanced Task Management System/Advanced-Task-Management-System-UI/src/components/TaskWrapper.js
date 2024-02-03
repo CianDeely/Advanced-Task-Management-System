@@ -3,17 +3,19 @@ import { Task } from "./Task";
 import { TaskForm } from "./TaskForm";
 import { EditTaskForm } from "./EditTaskForm";
 import Axios from "axios";
+import StatusChart from "./StatusChart"; // Import the StatusChart component
+
 
 export const TaskWrapper = () => {
   const [tasks, setTasks] = useState([]);
+  const [statusCounts, setStatusCounts] = useState([]);
   const [page, setPage] = useState(1);
   const [hasMore, setHasMore] = useState(true);
 
   const fetchTasks = async (page) => {
     try {
       const response = await Axios.get(`https://localhost:7284/Task?page=${page}`);
-      const data = response.data;
-
+      const data = response.data.tasks;
       // If data is empty, there are no more tasks
       setHasMore(data.length > 0);
 
@@ -28,7 +30,23 @@ export const TaskWrapper = () => {
 
   useEffect(() => {
     fetchTasks(page);
+    fetchStatusCounts();
   }, [page]);
+
+  const fetchStatusCounts = async () => {
+    try {
+      const response = await Axios.get("https://localhost:7284/Task");
+      const data = response.data;
+      // Check if 'statusCounts' property exists in 'data'
+      if (data && data.statusCounts) {
+        setStatusCounts(data.statusCounts);
+      } else {
+        console.error("Invalid data format or missing statusCounts property");
+      }
+    } catch (error) {
+      console.error("Error fetching status counts:", error);
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -54,6 +72,7 @@ export const TaskWrapper = () => {
       ...tasks,
       response.data,
     ]))
+
     } catch (error) {
       console.error("Error creating task:", error);
     }
@@ -61,8 +80,7 @@ export const TaskWrapper = () => {
 
   const deleteTask = async (id) => {
     try {
-      await Axios.delete(`https://localhost:7284/Task/tasks/${id}`);
-      setTasks(tasks.filter((task) => task.Id !== id));
+      await Axios.delete(`https://localhost:7284/Task/tasks/${id}`).then(response => setTasks(tasks.filter((task) => task.id !== id)));
     } catch (error) {
       console.error("Error deleting task:", error);
     }
@@ -116,6 +134,10 @@ export const TaskWrapper = () => {
   return (
     <div className="TaskWrapper">
     <h1>Task Management</h1>
+    <div>
+        <h2>Task Status Distribution</h2>
+        <StatusChart id="StatusChart" statusCounts={statusCounts} /> {/* Render the StatusChart */}
+      </div>
     <TaskForm addTask={addTask} />
     {tasks.map((task) =>
   task.isEditing ? (
@@ -135,5 +157,6 @@ export const TaskWrapper = () => {
   )
 )}
   </div>
+  
 );
 };
