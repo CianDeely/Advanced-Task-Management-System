@@ -65,7 +65,11 @@ const StatusChart = ({ statusCounts }) => {
 
   return (
     <div>
+            {statusCounts.length > 0 ? (
       <canvas id="StatusChartCanvas" width="400" height="200"></canvas>
+            ) : (
+              <h2>Add tasks to see a visualization</h2>
+            )}
     </div>
   );
 };
