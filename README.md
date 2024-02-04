@@ -162,7 +162,7 @@ immediately reflect in another without a page refresh.
 <!-- CONTACT -->
 ## Contact
 
-Cian Deely - [LinkedIn](https://www.linkedin.com/ciandeely) - ciandeely@outlook.com
+Cian Deely - [LinkedIn](https://www.linkedin.com/in/ciandeely) - ciandeely@outlook.com
 
 Project Link: [https://github.com/ciandeely/advanced-task-management-system](https://github.com/ciandeely/advanced-task-management-system)
 
