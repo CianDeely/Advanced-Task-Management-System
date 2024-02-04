@@ -1,10 +1,6 @@
 ﻿using Advanced_Task_Management_System.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 [ApiController]
 [Route("[controller]")]
@@ -67,7 +63,7 @@ public class TaskController : ControllerBase
 
         try
         {
-            newTask.Id = 0; 
+            newTask.Id = 0;
 
             _dbContext.MyTasks.Add(newTask);
             await _dbContext.SaveChangesAsync();
@@ -79,7 +75,7 @@ public class TaskController : ControllerBase
             _logger.LogError(ex, "Error adding task");
             return StatusCode(500, "Internal server error");
         }
-    }   
+    }
 
     [HttpPut("tasks/{id}")]
     public async Task<IActionResult> UpdateTask(int id, [FromBody] MyTask updatedTask)

@@ -6900,3 +6900,997 @@ GROUP BY [m].[Status]
 2024-02-04 17:44:33.654 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
 2024-02-04 17:44:33.654 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task?page=2 - - - 200 - application/json;+charset=utf-8 59.4028ms
 2024-02-04 17:44:33.654 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task - - - 200 - application/json;+charset=utf-8 59.4253ms
+2024-02-04 17:45:41.632 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task?page=1 - -
+2024-02-04 17:45:41.635 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:45:41.633 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task - -
+2024-02-04 17:45:41.635 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:45:41.635 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:45:41.635 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:45:41.635 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(Int32, Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 17:45:41.635 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(Int32, Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 17:45:41.661 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-04 17:45:41.665 +00:00 [INF] Executed DbCommand (26ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-04 17:45:41.670 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [MyTasks] AS [m]
+2024-02-04 17:45:41.670 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [MyTasks] AS [m]
+2024-02-04 17:45:41.671 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Status], COUNT(*) AS [Count]
+FROM [MyTasks] AS [m]
+GROUP BY [m].[Status]
+2024-02-04 17:45:41.671 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Status], COUNT(*) AS [Count]
+FROM [MyTasks] AS [m]
+GROUP BY [m].[Status]
+2024-02-04 17:45:41.672 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType0`2[[Advanced_Task_Management_System.Enums.Status, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-04 17:45:41.672 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType0`2[[Advanced_Task_Management_System.Enums.Status, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-04 17:45:41.672 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 36.8815ms
+2024-02-04 17:45:41.672 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 36.8588ms
+2024-02-04 17:45:41.672 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:45:41.672 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:45:41.672 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task?page=1 - - - 200 - application/json;+charset=utf-8 41.7236ms
+2024-02-04 17:45:41.672 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task - - - 200 - application/json;+charset=utf-8 39.1650ms
+2024-02-04 17:45:43.375 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task?page=2 - -
+2024-02-04 17:45:43.375 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task - -
+2024-02-04 17:45:43.375 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:45:43.375 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:45:43.375 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:45:43.375 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:45:43.375 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(Int32, Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 17:45:43.375 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(Int32, Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 17:45:43.377 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-04 17:45:43.377 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_0 ROWS ONLY
+2024-02-04 17:45:43.379 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [MyTasks] AS [m]
+2024-02-04 17:45:43.404 +00:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [MyTasks] AS [m]
+2024-02-04 17:45:43.411 +00:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Status], COUNT(*) AS [Count]
+FROM [MyTasks] AS [m]
+GROUP BY [m].[Status]
+2024-02-04 17:45:43.436 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType0`2[[Advanced_Task_Management_System.Enums.Status, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-04 17:45:43.437 +00:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Status], COUNT(*) AS [Count]
+FROM [MyTasks] AS [m]
+GROUP BY [m].[Status]
+2024-02-04 17:45:43.438 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 62.4146ms
+2024-02-04 17:45:43.438 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType0`2[[Advanced_Task_Management_System.Enums.Status, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-04 17:45:43.438 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:45:43.438 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 62.6945ms
+2024-02-04 17:45:43.438 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:45:43.438 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task?page=2 - - - 200 - application/json;+charset=utf-8 63.1215ms
+2024-02-04 17:45:43.438 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task - - - 200 - application/json;+charset=utf-8 63.2470ms
+2024-02-04 17:48:52.470 +00:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7284/Task/tasks/1 - 0
+2024-02-04 17:48:52.472 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:48:52.474 +00:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7284/Task/tasks/1 - 0 - 204 - - 3.9498ms
+2024-02-04 17:48:52.476 +00:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7284/Task/tasks/1 - 0
+2024-02-04 17:48:52.476 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:48:52.476 +00:00 [INF] Executing endpoint 'TaskController.DeleteTask (Advanced Task Management System)'
+2024-02-04 17:48:52.476 +00:00 [INF] Route matched with {action = "DeleteTask", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteTask(Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 17:48:52.499 +00:00 [INF] Executed DbCommand (22ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+WHERE [m].[Id] = @__p_0
+2024-02-04 17:48:52.528 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [MyTasks]
+OUTPUT 1
+WHERE [Id] = @p0;
+2024-02-04 17:48:52.528 +00:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2024-02-04 17:48:52.528 +00:00 [INF] Executed action TaskController.DeleteTask (Advanced Task Management System) in 51.8864ms
+2024-02-04 17:48:52.528 +00:00 [INF] Executed endpoint 'TaskController.DeleteTask (Advanced Task Management System)'
+2024-02-04 17:48:52.528 +00:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7284/Task/tasks/1 - 0 - 204 - - 52.4518ms
+2024-02-04 17:48:52.531 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task - -
+2024-02-04 17:48:52.531 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:48:52.532 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:48:52.532 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(Int32, Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 17:48:52.558 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-04 17:48:52.613 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [MyTasks] AS [m]
+2024-02-04 17:48:52.615 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Status], COUNT(*) AS [Count]
+FROM [MyTasks] AS [m]
+GROUP BY [m].[Status]
+2024-02-04 17:48:52.615 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType0`2[[Advanced_Task_Management_System.Enums.Status, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-04 17:48:52.615 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 83.5449ms
+2024-02-04 17:48:52.615 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:48:52.615 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task - - - 200 - application/json;+charset=utf-8 83.9515ms
+2024-02-04 17:49:11.481 +00:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7284/Task/tasks/7 - 0
+2024-02-04 17:49:11.481 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:49:11.481 +00:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7284/Task/tasks/7 - 0 - 204 - - 0.2524ms
+2024-02-04 17:49:11.483 +00:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7284/Task/tasks/7 - 0
+2024-02-04 17:49:11.483 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:49:11.483 +00:00 [INF] Executing endpoint 'TaskController.DeleteTask (Advanced Task Management System)'
+2024-02-04 17:49:11.483 +00:00 [INF] Route matched with {action = "DeleteTask", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteTask(Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 17:49:11.511 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+WHERE [m].[Id] = @__p_0
+2024-02-04 17:49:11.515 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [MyTasks]
+OUTPUT 1
+WHERE [Id] = @p0;
+2024-02-04 17:49:11.515 +00:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2024-02-04 17:49:11.515 +00:00 [INF] Executed action TaskController.DeleteTask (Advanced Task Management System) in 31.9657ms
+2024-02-04 17:49:11.515 +00:00 [INF] Executed endpoint 'TaskController.DeleteTask (Advanced Task Management System)'
+2024-02-04 17:49:11.515 +00:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7284/Task/tasks/7 - 0 - 204 - - 32.3782ms
+2024-02-04 17:49:11.518 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task - -
+2024-02-04 17:49:11.518 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:49:11.518 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:49:11.518 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(Int32, Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 17:49:11.545 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-04 17:49:11.570 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [MyTasks] AS [m]
+2024-02-04 17:49:11.572 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Status], COUNT(*) AS [Count]
+FROM [MyTasks] AS [m]
+GROUP BY [m].[Status]
+2024-02-04 17:49:11.572 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType0`2[[Advanced_Task_Management_System.Enums.Status, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-04 17:49:11.572 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 53.7757ms
+2024-02-04 17:49:11.572 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:49:11.572 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task - - - 200 - application/json;+charset=utf-8 54.1974ms
+2024-02-04 17:50:08.885 +00:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7284/Task/tasks/8 - 0
+2024-02-04 17:50:08.885 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:50:08.886 +00:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7284/Task/tasks/8 - 0 - 204 - - 0.2835ms
+2024-02-04 17:50:08.891 +00:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7284/Task/tasks/8 - 0
+2024-02-04 17:50:08.891 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:50:08.891 +00:00 [INF] Executing endpoint 'TaskController.DeleteTask (Advanced Task Management System)'
+2024-02-04 17:50:08.891 +00:00 [INF] Route matched with {action = "DeleteTask", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteTask(Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 17:50:08.918 +00:00 [INF] Executed DbCommand (23ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+WHERE [m].[Id] = @__p_0
+2024-02-04 17:50:08.974 +00:00 [INF] Executed DbCommand (27ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [MyTasks]
+OUTPUT 1
+WHERE [Id] = @p0;
+2024-02-04 17:50:08.976 +00:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2024-02-04 17:50:08.976 +00:00 [INF] Executed action TaskController.DeleteTask (Advanced Task Management System) in 84.706ms
+2024-02-04 17:50:08.976 +00:00 [INF] Executed endpoint 'TaskController.DeleteTask (Advanced Task Management System)'
+2024-02-04 17:50:08.976 +00:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7284/Task/tasks/8 - 0 - 204 - - 85.2220ms
+2024-02-04 17:50:08.979 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task - -
+2024-02-04 17:50:08.979 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:50:08.979 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:50:08.979 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(Int32, Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 17:50:08.982 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-04 17:50:08.984 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [MyTasks] AS [m]
+2024-02-04 17:50:09.008 +00:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Status], COUNT(*) AS [Count]
+FROM [MyTasks] AS [m]
+GROUP BY [m].[Status]
+2024-02-04 17:50:09.009 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType0`2[[Advanced_Task_Management_System.Enums.Status, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-04 17:50:09.009 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 30.1313ms
+2024-02-04 17:50:09.009 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:50:09.010 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task - - - 200 - application/json;+charset=utf-8 30.6822ms
+2024-02-04 17:50:12.643 +00:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7284/Task/tasks/9 - 0
+2024-02-04 17:50:12.644 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:50:12.644 +00:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7284/Task/tasks/9 - 0 - 204 - - 0.2425ms
+2024-02-04 17:50:12.645 +00:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7284/Task/tasks/9 - 0
+2024-02-04 17:50:12.645 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:50:12.646 +00:00 [INF] Executing endpoint 'TaskController.DeleteTask (Advanced Task Management System)'
+2024-02-04 17:50:12.646 +00:00 [INF] Route matched with {action = "DeleteTask", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteTask(Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 17:50:12.648 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+WHERE [m].[Id] = @__p_0
+2024-02-04 17:50:12.696 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [MyTasks]
+OUTPUT 1
+WHERE [Id] = @p0;
+2024-02-04 17:50:12.719 +00:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2024-02-04 17:50:12.719 +00:00 [INF] Executed action TaskController.DeleteTask (Advanced Task Management System) in 73.4033ms
+2024-02-04 17:50:12.719 +00:00 [INF] Executed endpoint 'TaskController.DeleteTask (Advanced Task Management System)'
+2024-02-04 17:50:12.719 +00:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7284/Task/tasks/9 - 0 - 204 - - 73.8329ms
+2024-02-04 17:50:12.722 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task - -
+2024-02-04 17:50:12.722 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:50:12.722 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:50:12.722 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(Int32, Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 17:50:12.750 +00:00 [INF] Executed DbCommand (27ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-04 17:50:12.752 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [MyTasks] AS [m]
+2024-02-04 17:50:12.754 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Status], COUNT(*) AS [Count]
+FROM [MyTasks] AS [m]
+GROUP BY [m].[Status]
+2024-02-04 17:50:12.754 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType0`2[[Advanced_Task_Management_System.Enums.Status, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-04 17:50:12.754 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 32.2016ms
+2024-02-04 17:50:12.754 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:50:12.754 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task - - - 200 - application/json;+charset=utf-8 32.5692ms
+2024-02-04 17:50:16.560 +00:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7284/Task/tasks/10 - 0
+2024-02-04 17:50:16.560 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:50:16.560 +00:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7284/Task/tasks/10 - 0 - 204 - - 0.2800ms
+2024-02-04 17:50:16.562 +00:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7284/Task/tasks/10 - 0
+2024-02-04 17:50:16.562 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:50:16.562 +00:00 [INF] Executing endpoint 'TaskController.DeleteTask (Advanced Task Management System)'
+2024-02-04 17:50:16.562 +00:00 [INF] Route matched with {action = "DeleteTask", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteTask(Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 17:50:16.585 +00:00 [INF] Executed DbCommand (22ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+WHERE [m].[Id] = @__p_0
+2024-02-04 17:50:16.633 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [MyTasks]
+OUTPUT 1
+WHERE [Id] = @p0;
+2024-02-04 17:50:16.634 +00:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2024-02-04 17:50:16.634 +00:00 [INF] Executed action TaskController.DeleteTask (Advanced Task Management System) in 71.5782ms
+2024-02-04 17:50:16.634 +00:00 [INF] Executed endpoint 'TaskController.DeleteTask (Advanced Task Management System)'
+2024-02-04 17:50:16.634 +00:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7284/Task/tasks/10 - 0 - 204 - - 72.0364ms
+2024-02-04 17:50:16.637 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task - -
+2024-02-04 17:50:16.637 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:50:16.637 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:50:16.637 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(Int32, Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 17:50:16.663 +00:00 [INF] Executed DbCommand (25ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-04 17:50:16.688 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [MyTasks] AS [m]
+2024-02-04 17:50:16.689 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Status], COUNT(*) AS [Count]
+FROM [MyTasks] AS [m]
+GROUP BY [m].[Status]
+2024-02-04 17:50:16.689 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType0`2[[Advanced_Task_Management_System.Enums.Status, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-04 17:50:16.689 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 52.3152ms
+2024-02-04 17:50:16.689 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:50:16.690 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task - - - 200 - application/json;+charset=utf-8 52.7691ms
+2024-02-04 17:50:50.548 +00:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7284/Task - 0
+2024-02-04 17:50:50.548 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:50:50.548 +00:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7284/Task - 0 - 204 - - 0.2228ms
+2024-02-04 17:50:50.554 +00:00 [INF] Request starting HTTP/1.1 POST https://localhost:7284/Task application/json 133
+2024-02-04 17:50:50.556 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:50:50.558 +00:00 [INF] Executing endpoint 'TaskController.CreateTask (Advanced Task Management System)'
+2024-02-04 17:50:50.558 +00:00 [INF] Route matched with {action = "CreateTask", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateTask(Advanced_Task_Management_System.Models.MyTask) on controller TaskController (Advanced Task Management System).
+2024-02-04 17:50:50.584 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [MyTasks] ([Description], [Due_Date], [Priority], [Status], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-02-04 17:50:50.607 +00:00 [INF] Executing CreatedAtActionResult, writing value of type 'Advanced_Task_Management_System.Models.MyTask'.
+2024-02-04 17:50:50.608 +00:00 [INF] Executed action TaskController.CreateTask (Advanced Task Management System) in 49.3771ms
+2024-02-04 17:50:50.608 +00:00 [INF] Executed endpoint 'TaskController.CreateTask (Advanced Task Management System)'
+2024-02-04 17:50:50.608 +00:00 [INF] Request finished HTTP/1.1 POST https://localhost:7284/Task application/json 133 - 201 - application/json;+charset=utf-8 54.2877ms
+2024-02-04 17:50:50.612 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task - -
+2024-02-04 17:50:50.612 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:50:50.612 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:50:50.612 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(Int32, Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 17:50:50.614 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-04 17:50:50.669 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [MyTasks] AS [m]
+2024-02-04 17:50:50.670 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Status], COUNT(*) AS [Count]
+FROM [MyTasks] AS [m]
+GROUP BY [m].[Status]
+2024-02-04 17:50:50.671 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType0`2[[Advanced_Task_Management_System.Enums.Status, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-04 17:50:50.671 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 58.8773ms
+2024-02-04 17:50:50.671 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:50:50.671 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task - - - 200 - application/json;+charset=utf-8 59.2997ms
+2024-02-04 17:51:00.463 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task?page=1 - -
+2024-02-04 17:51:00.463 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:51:00.463 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:51:00.463 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(Int32, Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 17:51:00.489 +00:00 [INF] Executed DbCommand (26ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-04 17:51:00.523 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [MyTasks] AS [m]
+2024-02-04 17:51:00.525 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Status], COUNT(*) AS [Count]
+FROM [MyTasks] AS [m]
+GROUP BY [m].[Status]
+2024-02-04 17:51:00.525 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task - -
+2024-02-04 17:51:00.525 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType0`2[[Advanced_Task_Management_System.Enums.Status, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-04 17:51:00.525 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:51:00.525 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:51:00.525 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 62.7268ms
+2024-02-04 17:51:00.526 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(Int32, Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 17:51:00.526 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:51:00.526 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task?page=1 - - - 200 - application/json;+charset=utf-8 63.1194ms
+2024-02-04 17:51:00.573 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-04 17:51:00.577 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [MyTasks] AS [m]
+2024-02-04 17:51:00.578 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Status], COUNT(*) AS [Count]
+FROM [MyTasks] AS [m]
+GROUP BY [m].[Status]
+2024-02-04 17:51:00.578 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType0`2[[Advanced_Task_Management_System.Enums.Status, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-04 17:51:00.579 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 53.098ms
+2024-02-04 17:51:00.579 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:51:00.579 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task - - - 200 - application/json;+charset=utf-8 53.6171ms
+2024-02-04 17:51:02.836 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task?page=2 - -
+2024-02-04 17:51:02.836 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task - -
+2024-02-04 17:51:02.836 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:51:02.836 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:51:02.836 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:51:02.836 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:51:02.836 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(Int32, Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 17:51:02.836 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(Int32, Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 17:51:02.864 +00:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-04 17:51:02.869 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [MyTasks] AS [m]
+2024-02-04 17:51:02.871 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Status], COUNT(*) AS [Count]
+FROM [MyTasks] AS [m]
+GROUP BY [m].[Status]
+2024-02-04 17:51:02.871 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType0`2[[Advanced_Task_Management_System.Enums.Status, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-04 17:51:02.872 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 35.2414ms
+2024-02-04 17:51:02.872 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:51:02.872 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task - - - 200 - application/json;+charset=utf-8 35.8058ms
+2024-02-04 17:51:02.894 +00:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_0 ROWS ONLY
+2024-02-04 17:51:02.919 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [MyTasks] AS [m]
+2024-02-04 17:51:02.946 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Status], COUNT(*) AS [Count]
+FROM [MyTasks] AS [m]
+GROUP BY [m].[Status]
+2024-02-04 17:51:02.946 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType0`2[[Advanced_Task_Management_System.Enums.Status, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-04 17:51:02.947 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 110.396ms
+2024-02-04 17:51:02.947 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:51:02.947 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task?page=2 - - - 200 - application/json;+charset=utf-8 110.9966ms
+2024-02-04 17:51:28.431 +00:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7284/Task - 0
+2024-02-04 17:51:28.431 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:51:28.434 +00:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7284/Task - 0 - 204 - - 2.8707ms
+2024-02-04 17:51:28.436 +00:00 [INF] Request starting HTTP/1.1 POST https://localhost:7284/Task application/json 152
+2024-02-04 17:51:28.436 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:51:28.436 +00:00 [INF] Executing endpoint 'TaskController.CreateTask (Advanced Task Management System)'
+2024-02-04 17:51:28.439 +00:00 [INF] Route matched with {action = "CreateTask", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateTask(Advanced_Task_Management_System.Models.MyTask) on controller TaskController (Advanced Task Management System).
+2024-02-04 17:51:28.443 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [MyTasks] ([Description], [Due_Date], [Priority], [Status], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-02-04 17:51:28.467 +00:00 [INF] Executing CreatedAtActionResult, writing value of type 'Advanced_Task_Management_System.Models.MyTask'.
+2024-02-04 17:51:28.468 +00:00 [INF] Executed action TaskController.CreateTask (Advanced Task Management System) in 26.8568ms
+2024-02-04 17:51:28.468 +00:00 [INF] Executed endpoint 'TaskController.CreateTask (Advanced Task Management System)'
+2024-02-04 17:51:28.468 +00:00 [INF] Request finished HTTP/1.1 POST https://localhost:7284/Task application/json 152 - 201 - application/json;+charset=utf-8 32.0711ms
+2024-02-04 17:51:28.473 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task - -
+2024-02-04 17:51:28.473 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:51:28.473 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:51:28.473 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(Int32, Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 17:51:28.503 +00:00 [INF] Executed DbCommand (27ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-04 17:51:28.534 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [MyTasks] AS [m]
+2024-02-04 17:51:28.536 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Status], COUNT(*) AS [Count]
+FROM [MyTasks] AS [m]
+GROUP BY [m].[Status]
+2024-02-04 17:51:28.536 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType0`2[[Advanced_Task_Management_System.Enums.Status, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-04 17:51:28.536 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 63.3412ms
+2024-02-04 17:51:28.536 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:51:28.537 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task - - - 200 - application/json;+charset=utf-8 63.7634ms
+2024-02-04 17:51:38.212 +00:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7284/Task/tasks/2 - 0
+2024-02-04 17:51:38.212 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:51:38.212 +00:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7284/Task/tasks/2 - 0 - 204 - - 0.2200ms
+2024-02-04 17:51:38.214 +00:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7284/Task/tasks/2 application/json 158
+2024-02-04 17:51:38.214 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:51:38.214 +00:00 [INF] Executing endpoint 'TaskController.UpdateTask (Advanced Task Management System)'
+2024-02-04 17:51:38.214 +00:00 [INF] Route matched with {action = "UpdateTask", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateTask(Int32, Advanced_Task_Management_System.Models.MyTask) on controller TaskController (Advanced Task Management System).
+2024-02-04 17:51:38.217 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [MyTasks] SET [Description] = @p0, [Due_Date] = @p1, [Priority] = @p2, [Status] = @p3, [Title] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+2024-02-04 17:51:38.243 +00:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2024-02-04 17:51:38.243 +00:00 [INF] Executed action TaskController.UpdateTask (Advanced Task Management System) in 29.0911ms
+2024-02-04 17:51:38.244 +00:00 [INF] Executed endpoint 'TaskController.UpdateTask (Advanced Task Management System)'
+2024-02-04 17:51:38.244 +00:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7284/Task/tasks/2 application/json 158 - 204 - - 30.1237ms
+2024-02-04 17:51:38.247 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task - -
+2024-02-04 17:51:38.247 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:51:38.247 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:51:38.247 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(Int32, Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 17:51:38.249 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-04 17:51:38.251 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [MyTasks] AS [m]
+2024-02-04 17:51:38.252 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Status], COUNT(*) AS [Count]
+FROM [MyTasks] AS [m]
+GROUP BY [m].[Status]
+2024-02-04 17:51:38.253 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType0`2[[Advanced_Task_Management_System.Enums.Status, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-04 17:51:38.253 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 5.7612ms
+2024-02-04 17:51:38.253 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:51:38.253 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task - - - 200 - application/json;+charset=utf-8 6.1643ms
+2024-02-04 17:51:44.895 +00:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7284/Task/tasks/2 - 0
+2024-02-04 17:51:44.895 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:51:44.895 +00:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7284/Task/tasks/2 - 0 - 204 - - 0.2510ms
+2024-02-04 17:51:44.896 +00:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7284/Task/tasks/2 application/json 158
+2024-02-04 17:51:44.896 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:51:44.897 +00:00 [INF] Executing endpoint 'TaskController.UpdateTask (Advanced Task Management System)'
+2024-02-04 17:51:44.897 +00:00 [INF] Route matched with {action = "UpdateTask", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateTask(Int32, Advanced_Task_Management_System.Models.MyTask) on controller TaskController (Advanced Task Management System).
+2024-02-04 17:51:44.899 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [MyTasks] SET [Description] = @p0, [Due_Date] = @p1, [Priority] = @p2, [Status] = @p3, [Title] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+2024-02-04 17:51:44.948 +00:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2024-02-04 17:51:44.949 +00:00 [INF] Executed action TaskController.UpdateTask (Advanced Task Management System) in 52.4416ms
+2024-02-04 17:51:44.950 +00:00 [INF] Executed endpoint 'TaskController.UpdateTask (Advanced Task Management System)'
+2024-02-04 17:51:44.950 +00:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7284/Task/tasks/2 application/json 158 - 204 - - 53.4260ms
+2024-02-04 17:51:44.953 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task - -
+2024-02-04 17:51:44.953 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:51:44.953 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:51:44.953 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(Int32, Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 17:51:44.955 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-04 17:51:44.984 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [MyTasks] AS [m]
+2024-02-04 17:51:44.985 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Status], COUNT(*) AS [Count]
+FROM [MyTasks] AS [m]
+GROUP BY [m].[Status]
+2024-02-04 17:51:44.986 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType0`2[[Advanced_Task_Management_System.Enums.Status, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-04 17:51:44.986 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 32.7569ms
+2024-02-04 17:51:44.986 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:51:44.986 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task - - - 200 - application/json;+charset=utf-8 33.1750ms
+2024-02-04 17:53:08.901 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task?page=2 - -
+2024-02-04 17:53:08.901 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:53:08.901 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:53:08.901 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(Int32, Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 17:53:08.925 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_0 ROWS ONLY
+2024-02-04 17:53:08.983 +00:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [MyTasks] AS [m]
+2024-02-04 17:53:09.022 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task - -
+2024-02-04 17:53:09.023 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:53:09.023 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:53:09.023 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(Int32, Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 17:53:09.049 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Status], COUNT(*) AS [Count]
+FROM [MyTasks] AS [m]
+GROUP BY [m].[Status]
+2024-02-04 17:53:09.049 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType0`2[[Advanced_Task_Management_System.Enums.Status, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-04 17:53:09.049 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 147.9295ms
+2024-02-04 17:53:09.049 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:53:09.049 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task?page=2 - - - 200 - application/json;+charset=utf-8 148.3342ms
+2024-02-04 17:53:09.052 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-04 17:53:09.055 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [MyTasks] AS [m]
+2024-02-04 17:53:09.056 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Status], COUNT(*) AS [Count]
+FROM [MyTasks] AS [m]
+GROUP BY [m].[Status]
+2024-02-04 17:53:09.056 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType0`2[[Advanced_Task_Management_System.Enums.Status, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-04 17:53:09.056 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 32.9163ms
+2024-02-04 17:53:09.056 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:53:09.056 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task - - - 200 - application/json;+charset=utf-8 34.5496ms
+2024-02-04 17:53:38.066 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task?page=2 - -
+2024-02-04 17:53:38.066 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task - -
+2024-02-04 17:53:38.066 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:53:38.066 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:53:38.066 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:53:38.066 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:53:38.071 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(Int32, Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 17:53:38.071 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(Int32, Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 17:53:38.078 +00:00 [INF] Executed DbCommand (6ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-04 17:53:38.126 +00:00 [INF] Executed DbCommand (28ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_0 ROWS ONLY
+2024-02-04 17:53:38.130 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [MyTasks] AS [m]
+2024-02-04 17:53:38.130 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [MyTasks] AS [m]
+2024-02-04 17:53:38.133 +00:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Status], COUNT(*) AS [Count]
+FROM [MyTasks] AS [m]
+GROUP BY [m].[Status]
+2024-02-04 17:53:38.136 +00:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Status], COUNT(*) AS [Count]
+FROM [MyTasks] AS [m]
+GROUP BY [m].[Status]
+2024-02-04 17:53:38.137 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType0`2[[Advanced_Task_Management_System.Enums.Status, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-04 17:53:38.137 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 65.5312ms
+2024-02-04 17:53:38.137 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType0`2[[Advanced_Task_Management_System.Enums.Status, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-04 17:53:38.137 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:53:38.137 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 65.6563ms
+2024-02-04 17:53:38.137 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task?page=2 - - - 200 - application/json;+charset=utf-8 70.9674ms
+2024-02-04 17:53:38.140 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:53:38.148 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task - - - 200 - application/json;+charset=utf-8 81.8170ms
+2024-02-04 17:57:10.206 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task?page=1 - -
+2024-02-04 17:57:10.206 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:57:10.206 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:57:10.207 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(Int32, Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 17:57:10.262 +00:00 [INF] Executed DbCommand (31ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-04 17:57:10.265 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task - -
+2024-02-04 17:57:10.266 +00:00 [INF] CORS policy execution successful.
+2024-02-04 17:57:10.266 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:57:10.266 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [MyTasks] AS [m]
+2024-02-04 17:57:10.266 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(Int32, Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 17:57:10.268 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Status], COUNT(*) AS [Count]
+FROM [MyTasks] AS [m]
+GROUP BY [m].[Status]
+2024-02-04 17:57:10.268 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType0`2[[Advanced_Task_Management_System.Enums.Status, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-04 17:57:10.268 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 61.5513ms
+2024-02-04 17:57:10.268 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:57:10.269 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-04 17:57:10.269 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task?page=1 - - - 200 - application/json;+charset=utf-8 62.4336ms
+2024-02-04 17:57:10.272 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [MyTasks] AS [m]
+2024-02-04 17:57:10.273 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Status], COUNT(*) AS [Count]
+FROM [MyTasks] AS [m]
+GROUP BY [m].[Status]
+2024-02-04 17:57:10.273 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType0`2[[Advanced_Task_Management_System.Enums.Status, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-04 17:57:10.273 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 6.7685ms
+2024-02-04 17:57:10.273 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 17:57:10.273 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task - - - 200 - application/json;+charset=utf-8 8.0465ms
+2024-02-04 18:07:40.730 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task - -
+2024-02-04 18:07:40.730 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task?page=1 - -
+2024-02-04 18:07:40.732 +00:00 [INF] CORS policy execution successful.
+2024-02-04 18:07:40.734 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 18:07:40.732 +00:00 [INF] CORS policy execution successful.
+2024-02-04 18:07:40.734 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(Int32, Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 18:07:40.734 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 18:07:40.734 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(Int32, Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 18:07:40.816 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-04 18:07:40.818 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [MyTasks] AS [m]
+2024-02-04 18:07:40.819 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Status], COUNT(*) AS [Count]
+FROM [MyTasks] AS [m]
+GROUP BY [m].[Status]
+2024-02-04 18:07:40.819 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType0`2[[Advanced_Task_Management_System.Enums.Status, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-04 18:07:40.819 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 84.4418ms
+2024-02-04 18:07:40.819 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 18:07:40.819 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task?page=1 - - - 200 - application/json;+charset=utf-8 88.8492ms
+2024-02-04 18:07:40.835 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-04 18:07:40.836 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [MyTasks] AS [m]
+2024-02-04 18:07:40.837 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Status], COUNT(*) AS [Count]
+FROM [MyTasks] AS [m]
+GROUP BY [m].[Status]
+2024-02-04 18:07:40.837 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType0`2[[Advanced_Task_Management_System.Enums.Status, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-04 18:07:40.837 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 102.8252ms
+2024-02-04 18:07:40.837 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 18:07:40.837 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task - - - 200 - application/json;+charset=utf-8 107.1942ms
+2024-02-04 18:08:47.784 +00:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7284/Task/tasks/2 - 0
+2024-02-04 18:08:47.784 +00:00 [INF] CORS policy execution successful.
+2024-02-04 18:08:47.785 +00:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7284/Task/tasks/2 - 0 - 204 - - 0.3331ms
+2024-02-04 18:08:47.787 +00:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7284/Task/tasks/2 application/json 158
+2024-02-04 18:08:47.787 +00:00 [INF] CORS policy execution successful.
+2024-02-04 18:08:47.787 +00:00 [INF] Executing endpoint 'TaskController.UpdateTask (Advanced Task Management System)'
+2024-02-04 18:08:47.787 +00:00 [INF] Route matched with {action = "UpdateTask", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateTask(Int32, Advanced_Task_Management_System.Models.MyTask) on controller TaskController (Advanced Task Management System).
+2024-02-04 18:08:47.813 +00:00 [INF] Executed DbCommand (25ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [MyTasks] SET [Description] = @p0, [Due_Date] = @p1, [Priority] = @p2, [Status] = @p3, [Title] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+2024-02-04 18:08:47.847 +00:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2024-02-04 18:08:47.848 +00:00 [INF] Executed action TaskController.UpdateTask (Advanced Task Management System) in 60.1301ms
+2024-02-04 18:08:47.848 +00:00 [INF] Executed endpoint 'TaskController.UpdateTask (Advanced Task Management System)'
+2024-02-04 18:08:47.848 +00:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7284/Task/tasks/2 application/json 158 - 204 - - 61.2271ms
+2024-02-04 18:08:47.851 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task - -
+2024-02-04 18:08:47.851 +00:00 [INF] CORS policy execution successful.
+2024-02-04 18:08:47.851 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 18:08:47.851 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(Int32, Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 18:08:47.879 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-04 18:08:47.882 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [MyTasks] AS [m]
+2024-02-04 18:08:47.883 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Status], COUNT(*) AS [Count]
+FROM [MyTasks] AS [m]
+GROUP BY [m].[Status]
+2024-02-04 18:08:47.883 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType0`2[[Advanced_Task_Management_System.Enums.Status, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-04 18:08:47.883 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 31.6517ms
+2024-02-04 18:08:47.883 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 18:08:47.883 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task - - - 200 - application/json;+charset=utf-8 32.0522ms
+2024-02-04 18:08:50.030 +00:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7284/Task/tasks/2 application/json 158
+2024-02-04 18:08:50.030 +00:00 [INF] CORS policy execution successful.
+2024-02-04 18:08:50.030 +00:00 [INF] Executing endpoint 'TaskController.UpdateTask (Advanced Task Management System)'
+2024-02-04 18:08:50.030 +00:00 [INF] Route matched with {action = "UpdateTask", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateTask(Int32, Advanced_Task_Management_System.Models.MyTask) on controller TaskController (Advanced Task Management System).
+2024-02-04 18:08:50.033 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [MyTasks] SET [Description] = @p0, [Due_Date] = @p1, [Priority] = @p2, [Status] = @p3, [Title] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+2024-02-04 18:08:50.055 +00:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2024-02-04 18:08:50.055 +00:00 [INF] Executed action TaskController.UpdateTask (Advanced Task Management System) in 25.1299ms
+2024-02-04 18:08:50.055 +00:00 [INF] Executed endpoint 'TaskController.UpdateTask (Advanced Task Management System)'
+2024-02-04 18:08:50.055 +00:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7284/Task/tasks/2 application/json 158 - 204 - - 25.6274ms
+2024-02-04 18:08:50.057 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task - -
+2024-02-04 18:08:50.058 +00:00 [INF] CORS policy execution successful.
+2024-02-04 18:08:50.058 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 18:08:50.058 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(Int32, Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 18:08:50.082 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-04 18:08:50.135 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [MyTasks] AS [m]
+2024-02-04 18:08:50.136 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Status], COUNT(*) AS [Count]
+FROM [MyTasks] AS [m]
+GROUP BY [m].[Status]
+2024-02-04 18:08:50.136 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType0`2[[Advanced_Task_Management_System.Enums.Status, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-04 18:08:50.136 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 78.6011ms
+2024-02-04 18:08:50.136 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 18:08:50.136 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task - - - 200 - application/json;+charset=utf-8 78.9828ms
+2024-02-04 18:37:41.193 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task - -
+2024-02-04 18:37:41.193 +00:00 [INF] CORS policy execution successful.
+2024-02-04 18:37:41.193 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 18:37:41.193 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(Int32, Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 18:37:41.225 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task?page=1 - -
+2024-02-04 18:37:41.225 +00:00 [INF] CORS policy execution successful.
+2024-02-04 18:37:41.226 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 18:37:41.226 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(Int32, Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 18:37:41.241 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-04 18:37:41.243 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [MyTasks] AS [m]
+2024-02-04 18:37:41.244 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Status], COUNT(*) AS [Count]
+FROM [MyTasks] AS [m]
+GROUP BY [m].[Status]
+2024-02-04 18:37:41.244 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType0`2[[Advanced_Task_Management_System.Enums.Status, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-04 18:37:41.244 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 50.3308ms
+2024-02-04 18:37:41.244 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 18:37:41.244 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task - - - 200 - application/json;+charset=utf-8 51.0117ms
+2024-02-04 18:37:41.285 +00:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-04 18:37:41.287 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [MyTasks] AS [m]
+2024-02-04 18:37:41.289 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Status], COUNT(*) AS [Count]
+FROM [MyTasks] AS [m]
+GROUP BY [m].[Status]
+2024-02-04 18:37:41.289 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType0`2[[Advanced_Task_Management_System.Enums.Status, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-04 18:37:41.289 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 63.4121ms
+2024-02-04 18:37:41.289 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 18:37:41.289 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task?page=1 - - - 200 - application/json;+charset=utf-8 63.8016ms
+2024-02-04 18:41:50.741 +00:00 [INF] Now listening on: https://localhost:7284
+2024-02-04 18:41:50.779 +00:00 [INF] Now listening on: http://localhost:5031
+2024-02-04 18:41:50.783 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-04 18:41:50.783 +00:00 [INF] Hosting environment: Development
+2024-02-04 18:41:50.783 +00:00 [INF] Content root path: /Users/ciandeely/Projects/Advanced-Task-Management-System/Advanced Task Management System
+2024-02-04 18:41:51.898 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/swagger/index.html - -
+2024-02-04 18:41:52.088 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/swagger/index.html - - - 200 - text/html;charset=utf-8 193.7345ms
+2024-02-04 18:41:52.276 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/swagger/v1/swagger.json - -
+2024-02-04 18:41:52.410 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 133.6363ms
+2024-02-04 18:41:57.794 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task?page=1 - -
+2024-02-04 18:41:57.824 +00:00 [INF] CORS policy execution successful.
+2024-02-04 18:41:57.829 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 18:41:57.858 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task - -
+2024-02-04 18:41:57.859 +00:00 [INF] CORS policy execution successful.
+2024-02-04 18:41:57.859 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 18:41:57.893 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(Int32, Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 18:41:57.893 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(Int32, Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 18:41:58.646 +00:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-02-04 18:41:58.647 +00:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-02-04 18:41:59.247 +00:00 [INF] Executed DbCommand (72ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-04 18:41:59.247 +00:00 [INF] Executed DbCommand (137ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-04 18:41:59.357 +00:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [MyTasks] AS [m]
+2024-02-04 18:41:59.357 +00:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [MyTasks] AS [m]
+2024-02-04 18:41:59.456 +00:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Status], COUNT(*) AS [Count]
+FROM [MyTasks] AS [m]
+GROUP BY [m].[Status]
+2024-02-04 18:41:59.456 +00:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Status], COUNT(*) AS [Count]
+FROM [MyTasks] AS [m]
+GROUP BY [m].[Status]
+2024-02-04 18:41:59.492 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType0`2[[Advanced_Task_Management_System.Enums.Status, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-04 18:41:59.492 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType0`2[[Advanced_Task_Management_System.Enums.Status, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-04 18:41:59.529 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 1631.7852ms
+2024-02-04 18:41:59.529 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 1631.8163ms
+2024-02-04 18:41:59.530 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 18:41:59.530 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 18:41:59.538 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task?page=1 - - - 200 - application/json;+charset=utf-8 1744.8096ms
+2024-02-04 18:41:59.538 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task - - - 200 - application/json;+charset=utf-8 1680.0383ms
+2024-02-04 18:42:12.117 +00:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7284/Task - 0
+2024-02-04 18:42:12.117 +00:00 [INF] CORS policy execution successful.
+2024-02-04 18:42:12.119 +00:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7284/Task - 0 - 204 - - 2.9848ms
+2024-02-04 18:42:12.121 +00:00 [INF] Request starting HTTP/1.1 POST https://localhost:7284/Task application/json 92
+2024-02-04 18:42:12.121 +00:00 [INF] CORS policy execution successful.
+2024-02-04 18:42:12.122 +00:00 [INF] Executing endpoint 'TaskController.CreateTask (Advanced Task Management System)'
+2024-02-04 18:42:12.126 +00:00 [INF] Route matched with {action = "CreateTask", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateTask(Advanced_Task_Management_System.Models.MyTask) on controller TaskController (Advanced Task Management System).
+2024-02-04 18:42:12.313 +00:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [MyTasks] ([Description], [Due_Date], [Priority], [Status], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-02-04 18:42:12.335 +00:00 [INF] Executing CreatedAtActionResult, writing value of type 'Advanced_Task_Management_System.Models.MyTask'.
+2024-02-04 18:42:12.358 +00:00 [INF] Executed action TaskController.CreateTask (Advanced Task Management System) in 231.9604ms
+2024-02-04 18:42:12.358 +00:00 [INF] Executed endpoint 'TaskController.CreateTask (Advanced Task Management System)'
+2024-02-04 18:42:12.359 +00:00 [INF] Request finished HTTP/1.1 POST https://localhost:7284/Task application/json 92 - 201 - application/json;+charset=utf-8 237.6821ms
+2024-02-04 18:42:12.362 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task - -
+2024-02-04 18:42:12.362 +00:00 [INF] CORS policy execution successful.
+2024-02-04 18:42:12.362 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 18:42:12.362 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(Int32, Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 18:42:12.414 +00:00 [INF] Executed DbCommand (25ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-04 18:42:12.463 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [MyTasks] AS [m]
+2024-02-04 18:42:12.465 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Status], COUNT(*) AS [Count]
+FROM [MyTasks] AS [m]
+GROUP BY [m].[Status]
+2024-02-04 18:42:12.465 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType0`2[[Advanced_Task_Management_System.Enums.Status, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-04 18:42:12.466 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 103.2799ms
+2024-02-04 18:42:12.466 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 18:42:12.466 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task - - - 200 - application/json;+charset=utf-8 104.0542ms
+2024-02-04 18:42:13.920 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task?page=2 - -
+2024-02-04 18:42:13.920 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task - -
+2024-02-04 18:42:13.920 +00:00 [INF] CORS policy execution successful.
+2024-02-04 18:42:13.920 +00:00 [INF] CORS policy execution successful.
+2024-02-04 18:42:13.920 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 18:42:13.920 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 18:42:13.920 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(Int32, Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 18:42:13.920 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(Int32, Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 18:42:13.970 +00:00 [INF] Executed DbCommand (47ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-04 18:42:14.086 +00:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-02-04 18:42:14.086 +00:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-02-04 18:42:14.157 +00:00 [INF] Executed DbCommand (71ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [MyTasks] AS [m]
+2024-02-04 18:42:14.160 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Status], COUNT(*) AS [Count]
+FROM [MyTasks] AS [m]
+GROUP BY [m].[Status]
+2024-02-04 18:42:14.160 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType0`2[[Advanced_Task_Management_System.Enums.Status, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-04 18:42:14.160 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 239.6774ms
+2024-02-04 18:42:14.160 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 18:42:14.161 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task - - - 200 - application/json;+charset=utf-8 240.6489ms
+2024-02-04 18:42:14.189 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_0 ROWS ONLY
+2024-02-04 18:42:14.232 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [MyTasks] AS [m]
+2024-02-04 18:42:14.233 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Status], COUNT(*) AS [Count]
+FROM [MyTasks] AS [m]
+GROUP BY [m].[Status]
+2024-02-04 18:42:14.234 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType0`2[[Advanced_Task_Management_System.Enums.Status, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-04 18:42:14.234 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 313.2645ms
+2024-02-04 18:42:14.234 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 18:42:14.234 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task?page=2 - - - 200 - application/json;+charset=utf-8 314.1759ms
+2024-02-04 18:42:22.624 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task?page=1 - -
+2024-02-04 18:42:22.624 +00:00 [INF] CORS policy execution successful.
+2024-02-04 18:42:22.624 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task - -
+2024-02-04 18:42:22.624 +00:00 [INF] CORS policy execution successful.
+2024-02-04 18:42:22.625 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 18:42:22.625 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 18:42:22.625 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(Int32, Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 18:42:22.625 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(Int32, Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 18:42:22.649 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-04 18:42:22.699 +00:00 [INF] Executed DbCommand (48ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-04 18:42:22.729 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [MyTasks] AS [m]
+2024-02-04 18:42:22.729 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [MyTasks] AS [m]
+2024-02-04 18:42:22.731 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Status], COUNT(*) AS [Count]
+FROM [MyTasks] AS [m]
+GROUP BY [m].[Status]
+2024-02-04 18:42:22.731 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Status], COUNT(*) AS [Count]
+FROM [MyTasks] AS [m]
+GROUP BY [m].[Status]
+2024-02-04 18:42:22.731 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType0`2[[Advanced_Task_Management_System.Enums.Status, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-04 18:42:22.731 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType0`2[[Advanced_Task_Management_System.Enums.Status, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-04 18:42:22.731 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 106.4958ms
+2024-02-04 18:42:22.731 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 106.4468ms
+2024-02-04 18:42:22.731 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 18:42:22.731 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 18:42:22.732 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task - - - 200 - application/json;+charset=utf-8 107.1057ms
+2024-02-04 18:42:22.732 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task?page=1 - - - 200 - application/json;+charset=utf-8 107.3704ms
+2024-02-04 18:42:24.505 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task - -
+2024-02-04 18:42:24.505 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:7284/Task?page=2 - -
+2024-02-04 18:42:24.505 +00:00 [INF] CORS policy execution successful.
+2024-02-04 18:42:24.505 +00:00 [INF] CORS policy execution successful.
+2024-02-04 18:42:24.505 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 18:42:24.505 +00:00 [INF] Executing endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 18:42:24.505 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(Int32, Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 18:42:24.505 +00:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(Int32, Int32) on controller TaskController (Advanced Task Management System).
+2024-02-04 18:42:24.581 +00:00 [INF] Executed DbCommand (49ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_0 ROWS ONLY
+2024-02-04 18:42:24.581 +00:00 [INF] Executed DbCommand (25ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Description], [m].[Due_Date], [m].[Priority], [m].[Status], [m].[Title]
+FROM [MyTasks] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-04 18:42:24.652 +00:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [MyTasks] AS [m]
+2024-02-04 18:42:24.676 +00:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [MyTasks] AS [m]
+2024-02-04 18:42:24.679 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Status], COUNT(*) AS [Count]
+FROM [MyTasks] AS [m]
+GROUP BY [m].[Status]
+2024-02-04 18:42:24.679 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Status], COUNT(*) AS [Count]
+FROM [MyTasks] AS [m]
+GROUP BY [m].[Status]
+2024-02-04 18:42:24.679 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType0`2[[Advanced_Task_Management_System.Enums.Status, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-04 18:42:24.680 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Collections.Generic.List`1[[Advanced_Task_Management_System.Models.MyTask, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType0`2[[Advanced_Task_Management_System.Enums.Status, Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Advanced Task Management System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-04 18:42:24.680 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 174.6673ms
+2024-02-04 18:42:24.680 +00:00 [INF] Executed action TaskController.GetAllTasks (Advanced Task Management System) in 174.6469ms
+2024-02-04 18:42:24.680 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 18:42:24.680 +00:00 [INF] Executed endpoint 'TaskController.GetAllTasks (Advanced Task Management System)'
+2024-02-04 18:42:24.680 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task?page=2 - - - 200 - application/json;+charset=utf-8 175.4917ms
+2024-02-04 18:42:24.680 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:7284/Task - - - 200 - application/json;+charset=utf-8 175.4852ms
