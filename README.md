@@ -7,7 +7,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/CianDeely/Advanced-Task-Management-System">
-    <img src="images/logo.png" alt="Logo" width="260" height="300">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Advanced Task management System</h3>
@@ -140,11 +140,9 @@ This is an example of how to list things you need to use the software and how to
 
 
 <!-- DEMO VIDEO -->
-## Demo
+## Demo Video
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+[![Watch the video](https://img.youtube.com/vi/wk98vNcyCMs/maxresdefault.jpg)](https://www.youtube.com/watch?v=wk98vNcyCMs)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -180,7 +178,7 @@ Project Link: [https://github.com/ciandeely/advanced-task-management-system](htt
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/ciandeely
-[product-screenshot]: images/demo.gif
+[product-screenshot]: images/screenshot.png
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
 [Node.js]:  https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white
