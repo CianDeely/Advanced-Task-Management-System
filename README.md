@@ -110,7 +110,7 @@ This is an example of how to list things you need to use the software and how to
 5. Open Advanced-Task-Management-System.sln in Visual Studio 2022 (or an equivalent IDE)
 6. Build the project in VS2022
 7. Start debugging the project
-8. To create the database you can either execute the "Create-DB.sql" script included or import the TaskDB backup file included
+8. To create the database you can execute the "Create-DB.sql" script in SQL Server Management Studio
     ```js
    if db_id('tempdb') IS NULL
      CREATE DATABASE tempdb;
