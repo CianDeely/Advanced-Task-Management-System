@@ -35,10 +35,20 @@ export const EditTaskForm = ({ editTask, task, editTaskComplete }) => {
     } else{
       if(priority.value == "2"){
         if (window.confirm('Are you sure you wish to upgrade this task to a high priority task?')){
-          editTaskComplete(task.id, title ? title : task.title, description ? description : task.description, priority.value ? priority.value : task.priority, dueDate ? dueDate : task.dueDate, status.value ? status.value : task.status)
+          editTaskComplete(task.id, title ? title : task.title, description ? description : task.description, priority.value ? priority.value : task.priority, dueDate ? dueDate : task.due_Date, status.value ? status.value : task.status)
+          setTitle('');
+          setDescription('');
+          setPriority(null);
+          setDueDate('');
+          setStatus(null);
         }
     } else {
-      editTaskComplete(task.id, title ? title : task.title, description ? description : task.description, priority.value ? priority.value : task.priority, dueDate ? dueDate : task.dueDate, status.value ? status.value : task.status)
+      editTaskComplete(task.id, title ? title : task.title, description ? description : task.description, priority.value ? priority.value : task.priority, dueDate ? dueDate : task.due_Date, status.value ? status.value : task.status)
+      setTitle('');
+      setDescription('');
+      setPriority(null);
+      setDueDate('');
+      setStatus(null);
     }
  }
 }
@@ -82,9 +92,10 @@ export const EditTaskForm = ({ editTask, task, editTaskComplete }) => {
       <input
         required
         type="date"
-        defaultValue={task.dueDate}
+        value={task.due_Date}
+        defaultValue={task.due_Date}
         className="task-input"
-        placeholder={task.dueDate}
+        placeholder={task.due_Date}
         onChange={(e) => setDueDate(e.target.value)}
       />
       <div id="edit-status-dropdown" className="dropdown-wrapper">

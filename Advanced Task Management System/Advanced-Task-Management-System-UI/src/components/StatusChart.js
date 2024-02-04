@@ -59,7 +59,7 @@ const StatusChart = ({ statusCounts }) => {
   };
 
   const getStatusColors = (count) => {
-    const colors = ["#FF5733", "#33FF57", "#3366FF", "#FFFF00"];
+    const colors = ["#7633FF", "#33C2FF", "#33FFD1", "#FFAB33"];
     return colors.slice(0, count);
   };
 

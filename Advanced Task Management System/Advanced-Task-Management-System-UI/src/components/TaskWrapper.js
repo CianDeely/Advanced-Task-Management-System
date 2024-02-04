@@ -128,13 +128,10 @@ export const TaskWrapper = () => {
   
 
   const editTaskComplete = async (id, title, description, priority, due_date, status) => {
-    const edittedTask = { Id: id, Title: title, Description: description, Priority: parseInt(priority), Due_Date: due_date, Status: parseInt(status) }
+    const edittedTask = { Id: id, Title: title, Description: description, Priority: parseInt(priority), Due_Date: new Date(due_date), Status: parseInt(status) }
     try {
-      await Axios.put(`https://localhost:7284/Task/tasks/${id}`, edittedTask).then(response => setTasks(
-        tasks.map((task) =>
-          task.id === id ? { ...task, id: id, title: title, description: description, priority: priority, due_date: due_date, status: status, isEditing: !task.isEditing } : task
-        )
-      ));
+      await Axios.put(`https://localhost:7284/Task/tasks/${id}`, edittedTask);
+      fetchTasks(page);
       fetchStatusCounts();
       toast("Task updated!");
     } catch (error) {
