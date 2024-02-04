@@ -27,7 +27,7 @@ export const TaskForm = ({addTask}) => {
                 statusDropdown.classList.remove("mandatory-field");
             }, 3000);
         } else{
-            if(status.value == "2"){
+            if(priority.value == "2"){
                 if (window.confirm('Are you sure you wish to create a high priority task?')){
                     addTask(title, description, priority.value, dueDate, status.value);
                     setTitle('');

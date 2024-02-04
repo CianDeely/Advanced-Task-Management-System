@@ -76,6 +76,7 @@ export const TaskWrapper = () => {
       response.data,
     ]))
     toast("Task added!");
+    fetchStatusCounts();
     } catch (error) {
       console.error("Error creating task:", error);
     }
@@ -85,6 +86,7 @@ export const TaskWrapper = () => {
     try {
       toast("Task deleted!");
       await Axios.delete(`https://localhost:7284/Task/tasks/${id}`).then(response => setTasks(tasks.filter((task) => task.id !== id)));
+      fetchStatusCounts();
     } catch (error) {
       console.error("Error deleting task:", error);
     }
@@ -110,6 +112,7 @@ export const TaskWrapper = () => {
           task.id === id ? { ...task, status: edittedTask.status } : task
         )
       );
+      fetchStatusCounts();
     } catch (error) {
       console.error("Error updating task:", error);
     }
@@ -132,6 +135,7 @@ export const TaskWrapper = () => {
           task.id === id ? { ...task, id: id, title: title, description: description, priority: priority, due_date: due_date, status: status, isEditing: !task.isEditing } : task
         )
       ));
+      fetchStatusCounts();
       toast("Task updated!");
     } catch (error) {
       console.error("Error updating task:", error);

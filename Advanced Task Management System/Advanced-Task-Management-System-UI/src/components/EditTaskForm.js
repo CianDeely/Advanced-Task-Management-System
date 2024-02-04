@@ -33,12 +33,12 @@ export const EditTaskForm = ({ editTask, task, editTaskComplete }) => {
           editStatusDropdown.classList.remove("mandatory-field");
         }, 3000);
     } else{
-      if(status.value == "2"){
+      if(priority.value == "2"){
         if (window.confirm('Are you sure you wish to upgrade this task to a high priority task?')){
-          editTaskComplete(task.id, title, description, priority.value, dueDate, status.value)
+          editTaskComplete(task.id, title ? title : task.title, description ? description : task.description, priority.value ? priority.value : task.priority, dueDate ? dueDate : task.dueDate, status.value ? status.value : task.status)
         }
     } else {
-      editTaskComplete(task.id, title, description, priority.value, dueDate, status.value)
+      editTaskComplete(task.id, title ? title : task.title, description ? description : task.description, priority.value ? priority.value : task.priority, dueDate ? dueDate : task.dueDate, status.value ? status.value : task.status)
     }
  }
 }
