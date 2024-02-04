@@ -133,6 +133,11 @@ export const TaskWrapper = () => {
     const edittedTask = { Id: id, Title: title, Description: description, Priority: parseInt(priority), Due_Date: new Date(due_date), Status: parseInt(status) }
     try {
       await Axios.put(`https://localhost:7284/Task/tasks/${id}`, edittedTask);
+      setTasks((prevTasks) =>
+      prevTasks.map((task) =>
+        task.id === id ? { ...task, isEditing: !task.isEditing } : task
+      )
+    );
       fetchTasks(page);
       fetchStatusCounts();
       toast("Task updated!");
