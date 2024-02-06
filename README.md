@@ -110,7 +110,7 @@ This is an example of how to list things you need to use the software and how to
 5. Open Advanced-Task-Management-System.sln in Visual Studio 2022 (or an equivalent IDE)
 6. Build the project in VS2022
 7. Start debugging the project
-8. To create the database you can either execute the "Create-DB.sql" script included or import the TaskDB backup file included
+8. To create the database you can execute the "Create-DB.sql" script in SQL Server Management Studio
     ```js
    if db_id('tempdb') IS NULL
      CREATE DATABASE tempdb;
@@ -140,11 +140,9 @@ This is an example of how to list things you need to use the software and how to
 
 
 <!-- DEMO VIDEO -->
-## Demo
+## Demo Video
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+[![Watch the video](https://img.youtube.com/vi/wk98vNcyCMs/maxresdefault.jpg)](https://www.youtube.com/watch?v=wk98vNcyCMs)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -164,7 +162,7 @@ immediately reflect in another without a page refresh.
 <!-- CONTACT -->
 ## Contact
 
-Cian Deely - [LinkedIn](https://www.linkedin.com/ciandeely) - ciandeely@outlook.com
+Cian Deely - [LinkedIn](https://www.linkedin.com/in/ciandeely) - ciandeely@outlook.com
 
 Project Link: [https://github.com/ciandeely/advanced-task-management-system](https://github.com/ciandeely/advanced-task-management-system)
 
@@ -172,12 +170,10 @@ Project Link: [https://github.com/ciandeely/advanced-task-management-system](htt
 
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/ciandeely
 [product-screenshot]: images/demo.gif
