@@ -1,31 +1,26 @@
 ﻿<Properties StartupConfiguration="{6892FACC-E4C1-483D-99E5-523E3BCDC3A3}|https">
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Advanced_220Task_220Management_220System PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Advanced Task Management System/Advanced-Task-Management-System-UI/src/components/StatusChart.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Advanced Task Management System/appsettings.json">
     <Files>
       <File FileName="Advanced Task Management System/Models/MyTask.cs" />
-      <File FileName="Advanced Task Management System/Controllers/TaskController.cs" />
-      <File FileName="Advanced Task Management System/Models/TaskDbContext.cs" />
+      <File FileName="Advanced Task Management System/Controllers/TaskController.cs" Line="80" Column="28" />
+      <File FileName="Advanced Task Management System/Models/TaskDbContext.cs" Line="28" Column="14" />
       <File FileName="Advanced Task Management System/Startup.cs" />
       <File FileName="Advanced Task Management System/Program.cs" />
       <File FileName="Advanced Task Management System/Enums/Status.cs" />
-      <File FileName="Advanced Task Management System/appsettings.json" />
-      <File FileName="Advanced Task Management System/Advanced-Task-Management-System-UI/src/components/StatusChart.js" Line="1" Column="1" />
+      <File FileName="Advanced Task Management System/appsettings.json" Line="15" Column="1" />
+      <File FileName="Advanced Task Management System/Advanced-Task-Management-System-UI/src/components/StatusChart.js" Line="29" Column="14" />
+      <File FileName="Advanced Task Management System/Middleware/RequestLoggingMiddleware.cs" Line="25" Column="118" />
+      <File FileName="Advanced Task Management System/Create-DB.sql" Line="14" Column="3" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Advanced Task Management System">
+          <Node name="Advanced Task Management System" selected="True">
             <Node name="Advanced Task Management System" expanded="True">
-              <Node name="Advanced-Task-Management-System-UI" expanded="True">
-                <Node name="src" expanded="True">
-                  <Node name="components" expanded="True" />
-                </Node>
-              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Middleware" expanded="True" />
               <Node name="Models" expanded="True" />
             </Node>
           </Node>
@@ -33,5 +28,9 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

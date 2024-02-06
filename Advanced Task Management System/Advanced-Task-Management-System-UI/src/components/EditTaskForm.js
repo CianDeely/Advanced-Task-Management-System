@@ -95,7 +95,6 @@ export const EditTaskForm = ({ editTask, task, editTaskComplete }) => {
       <input
         required
         type="date"
-        value={task.due_Date}
         defaultValue={task.due_Date}
         className="task-input"
         placeholder={task.due_Date}
